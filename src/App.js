@@ -1,7 +1,10 @@
+import React from 'react';
+import LandingPage from './Components/Landing/LandingPage';
+
 const App = () => {
   return (
     <div className="App">
-     hello
+      <LandingPage />
     </div>
   );
 }
