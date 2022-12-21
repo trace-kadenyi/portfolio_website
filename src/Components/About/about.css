@@ -3,10 +3,14 @@
   overflow: hidden;
   min-height: 100vh;
   background: #0f1626;
-  margin-top: 30px;
+  /* margin-top: 30px; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+ul {
+  list-style-type: none;
 }
 
 .links_container {
@@ -15,9 +19,14 @@
   justify-content: center;
   align-items: center;
   gap: 5px;
-  position: absolute;
-  bottom: 20%;
+  /* position: absolute;
+  bottom: 10%; */
   left: 50%;
+  margin-bottom: 20px;
+}
+
+.content_para {
+  font-family: "Lato", sans-serif;
 }
 
 .tabs {
@@ -44,14 +53,19 @@ button {
 }
 
 .content {
-  background-color: white;
+  /* background-color: white; */
   padding: 20px;
   width: 100%;
   display: none;
+  color: #fff;
 }
 
 .active_content {
   display: block;
+}
+
+.active_two {
+  /* background: #0f1626; */
 }
 
 .about_title {
@@ -63,6 +77,7 @@ button {
   width: max-content;
   font-family: "Poppins", sans-serif;
   border-right: 2px #FF3B3F solid;
+  letter-spacing: 0.09rem;
 
 }
 
@@ -73,7 +88,36 @@ button {
   margin: 20px;
 }
 
-@media screen and (max-width: 550px) {
+/* skills section */
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.skills h3 {
+  color: #FF3B3F;
+  text-decoration: underline;
+}
+
+.skills ul {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  /* border: 2px red solid; */
+}
+
+.skills ul li:not(:last-child) {
+  border-right: 2px #ff3b3f solid;
+  padding-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  
+}
+
+@media screen and (max-width: 768px) {
   .active_content {
     display: flex;
     flex-direction: column;
@@ -84,7 +128,7 @@ button {
     margin-top: 0;
   }
   
-  .links_container {
-    bottom: 5%;
+  .skill_hero {
+    max-width: 400px;
   }
 }
