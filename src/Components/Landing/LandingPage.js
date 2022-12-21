@@ -2,11 +2,11 @@ import React, { useEffect } from "react";
 import anime from "animejs/lib/anime.es.js";
 
 import "./landingpage.css";
-import twitter from "../../Assets/Images/twitter1.png";
-import linkedin from "../../Assets/Images/linkedin2.png";
+import twitter from "../../Assets/Images/twitter.png";
+import linkedin from "../../Assets/Images/linkedin.png";
 import github from "../../Assets/Images/github.png";
 import medium from "../../Assets/Images/medium.png";
-import angelist from "../../Assets/Images/angelist2.png";
+import angelist from "../../Assets/Images/angelist.png";
 
 const LandingPage = () => {
   // select container div after component mounts
