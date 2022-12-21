@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import "./about.css";
+import myPic from "../../Assets/Images/my_pic.png";
 
 const About = () => {
   const [active, setActive] = useState(1);
@@ -14,8 +15,9 @@ const About = () => {
       <div className="about_container">
         <div className="content_tabs">
           <div className={active === 1 ? "content active_content" : "content"}>
-            <h1>About Me</h1>
-            <p>
+            <h1 className="about_title">About Me</h1>
+            <img src={myPic} alt="my_pic" className="hero"/>
+            <p className="content_para">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -23,12 +25,14 @@ const About = () => {
               reprehenderit in voluptate velit esse cillum dolore eu fugiat
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
               sunt in culpa qui officia deserunt mollit anim id est laborum.
+              
+              
             </p>
           </div>
 
           <div className={active === 2 ? "content active_content" : "content"}>
-            <h1>Skills</h1>
-            <p>
+            <h1 className="about_title">Skills</h1>
+            <p className="content-para">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -40,8 +44,8 @@ const About = () => {
           </div>
 
           <div className={active === 3 ? "content active_content" : "content"}>
-            <h1>Hobbies</h1>
-            <p>
+            <h1 className="about_title">Hobbies</h1>
+            <p className="content-para">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
