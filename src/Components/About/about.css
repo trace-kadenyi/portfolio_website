@@ -1,0 +1,57 @@
+.about_sect {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  /* max-height: 100vh; */
+  background: #0f1626;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.links_container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+}
+
+.tabs {
+  padding: 6px;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  background: #fff;
+}
+
+.active_tabs {
+  background: #ff3b3f;
+}
+
+.active_tabs::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+}
+
+button {
+  border: none;
+}
+
+.content {
+  background-color: white;
+  padding: 20px;
+  width: 100%;
+  /* height: 100%; */
+  display: none;
+}
+
+.active_content {
+  display: block;
+}
