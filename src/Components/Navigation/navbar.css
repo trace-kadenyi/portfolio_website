@@ -1,0 +1,151 @@
+.new_header_sect {
+  background: #fff;
+}
+
+.new_header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  z-index: 2000;
+  background: #0f1626;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.05);
+  scroll-behavior: smooth;
+}
+
+.logo {
+  height: 60px;
+  line-height: 60px;
+  color: #12334e;
+  font-weight: 700;
+  font-size: 2em;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+#toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  background: #0f1626;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+}
+
+#toggle::before {
+  content: '';
+  position: absolute;
+  width: 28px;
+  height: 2px;
+  background: #fff;
+  transform: translateY(-5px);
+  transition: 0.2s;
+}
+
+#toggle::after {
+  content: '';
+  position: absolute;
+  width: 28px;
+  height: 2px;
+  background: #fff;
+  transform: translateY(5px);
+  transition: 0.2s;
+}
+
+#toggle.active::before {
+  transform: rotate(45deg) translateY(0);
+  background: #FF3B3F;
+}
+
+#toggle.active::after {
+  transform: rotate(-45deg) translateY(0);
+  background: #FF3B3F;
+}
+
+#new_navbar {
+  position: relative;
+  height: 60px;
+  right: 60px;
+  transition: 0.5s;
+  width: 0;
+  overflow: hidden;
+}
+
+#new_navbar.active {
+  width: 660px;
+}
+.new_header_ul {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.new_header_ul li {
+  list-style-type: none;
+}
+
+.new_header_ul li a {
+  color: #fff;
+  height: 60px;
+  line-height: 60px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 0 15px;
+  letter-spacing: 2px;
+}
+
+.new_header_ul li a:hover {
+  background: #FF3B3F;
+}
+
+.sect {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f5f5f5;
+  font-size: 18vw;
+  font-weight: 700;
+}
+
+/* responsiveness */
+@media screen and (max-width: 850px) {
+  #new_navbar {
+  position: fixed;
+  bottom: -100%;
+  right: 0;
+  width: 100%;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  background: #0f1626;
+}
+
+#new_navbar.active {
+  height: calc(100vh - 60px);
+  bottom: 0;
+  width: 100%;
+
+}
+
+.new_header_ul {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+}
