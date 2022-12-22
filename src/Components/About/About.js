@@ -146,7 +146,7 @@ const About = () => {
                 I had been a self-taught developer for 1 year when I joined{" "}
                 <a
                   href="https://www.microverse.org/"
-                  target="_blank"
+                  target="_blank" rel="noreferrer"
                   className="microverse"
                 >
                   Microverse

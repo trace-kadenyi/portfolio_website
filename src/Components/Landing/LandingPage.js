@@ -59,6 +59,7 @@ const LandingPage = () => {
               <a
                 href="https://www.linkedin.com/in/tracey-kadenyi/"
                 target="_blank"
+                rel="noreferrer"
               >
                 <img src={linkedin} alt="linkedin" />
                 <span>LinkedIn</span>
@@ -66,7 +67,11 @@ const LandingPage = () => {
             </li>
             {/* github */}
             <li>
-              <a href="https://github.com/TracK92" target="_blank">
+              <a
+                href="https://github.com/TracK92"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img src={github} alt="github" />
                 <span>GitHub</span>
               </a>
@@ -74,7 +79,11 @@ const LandingPage = () => {
 
             <li>
               {/* angelist */}
-              <a href="https://angel.co/u/tracey-kadenyi" target="_blank">
+              <a
+                href="https://angel.co/u/tracey-kadenyi"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img src={angelist} alt="angelist" />
                 <span>AngelList</span>
               </a>
@@ -82,7 +91,11 @@ const LandingPage = () => {
 
             <li>
               {/* twitter */}
-              <a href="https://twitter.com/traci_k7" target="_blank">
+              <a
+                href="https://twitter.com/traci_k7"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img src={twitter} alt="twitter" />
                 <span>Twitter</span>
               </a>
@@ -90,7 +103,11 @@ const LandingPage = () => {
 
             <li>
               {/* medium */}
-              <a href="https://medium.com/@tracekadenyi" target="_blank">
+              <a
+                href="https://medium.com/@tracekadenyi"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img src={medium} alt="medium" />
                 <span>Medium</span>
               </a>
