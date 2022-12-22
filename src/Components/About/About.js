@@ -3,6 +3,11 @@ import React, { useState } from "react";
 import "./about.css";
 import myPic from "../../Assets/Images/my_pic.png";
 import skills from "../../Assets/Images/skills1.gif";
+import cover from "../../Assets/Images/cover.jpeg";
+import one from "../../Assets/Images/1.jpeg";
+import two from "../../Assets/Images/2.jpeg";
+import three from "../../Assets/Images/3.jpeg";
+import four from "../../Assets/Images/4.jpeg";
 
 const About = () => {
   const [active, setActive] = useState(1);
@@ -15,6 +20,7 @@ const About = () => {
     <section id="about" className="about_sect">
       <div className="about_container">
         <div className="content_tabs">
+          {/* about me intro */}
           <div className={active === 1 ? "content active_content" : "content"}>
             <h1 className="about_title">About Me</h1>
             <img src={myPic} alt="my_pic" className="hero" />
@@ -24,13 +30,14 @@ const About = () => {
               <br />
               My primary skills are React/Redux and Ruby on Rails. <br />
               I love the ability that programming gives me to create anything
-              that I can imagine, just like MAGIC. <br />
+              that I can imagine, just like <span className="magic">MAGIC</span>. <br />
               I embrace challenges because solving them is so much fun. <br />
               I am also a lifelong learner with a passion for technology, books,
               food, dogs and people. <br />
+              If you have a tech idea you want to actualize, <a href="mailto:treykadenyi@gmail.com" className="touch">get in touch</a> and let's chat!
             </p>
           </div>
-
+          {/* skills section */}
           <div
             className={
               active === 2 ? "content active_content active_two" : "content"
@@ -92,19 +99,75 @@ const About = () => {
               </ul>
             </div>
           </div>
-
-          <div className={active === 3 ? "content active_content" : "content"}>
+          {/* hobbies section */}
+          {/* <div className={active === 3 ? "content active_content" : "content"}>
             <h1 className="about_title">Hobbies</h1>
-            <p className="content_para">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
+            
+            <div className="book">
+              <input type="checkbox" id="c1" />
+              <input type="checkbox" id="c2" />
+              <input type="checkbox" id="c3" />
+
+              <div id="cover">
+                <img src={cover} alt="cover" />
+              </div>
+
+              <div className="flip_book">
+                <div className="flip" id="p1">
+                  <div className="back">
+                    <img src={one} alt="one" />
+                    <label className="back_btn" for="c1">Back</label>
+                  </div>
+                  <div className="front">
+                    <h2>Pineapple</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.{" "}
+                    </p>
+                    <label className="front_btn" for="c1">Next</label>
+                  </div>
+                </div>
+
+                  <div className="flip" id="p2">
+                  <div className="back">
+                    <img src={two} alt="one" />
+                    <label className="back_btn" for="c2">Back</label>
+                  </div>
+                  <div className="front">
+                    <h2>Apple</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.{" "}
+                    </p>
+                    <label className="front_btn" for="c2">Next</label>
+                  </div>
+                </div>
+
+                  <div className="flip" id="p3">
+                  <div className="back">
+                    <img src={three} alt="one" />
+                    <label className="back_btn" for="c3">Back</label>
+                  </div>
+                  <div className="front">
+                    <h2>Banana</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.{" "}
+                    </p>
+                    <label className="front_btn" for="c3">Next</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> */}
+
+          
         </div>
 
         {/* links */}
@@ -117,10 +180,10 @@ const About = () => {
             className={active === 2 ? "tabs active_tabs" : "tabs"}
             onClick={() => handleTabs(2)}
           ></button>
-          <button
+          {/* <button
             className={active === 3 ? "tabs active_tabs" : "tabs"}
             onClick={() => handleTabs(3)}
-          ></button>
+          ></button> */}
         </div>
       </div>
     </section>

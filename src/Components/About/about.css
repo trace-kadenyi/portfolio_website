@@ -105,7 +105,6 @@ button {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
-  /* border: 2px red solid; */
 }
 
 .skills ul li:not(:last-child) {
@@ -113,10 +112,133 @@ button {
   padding-right: 10px;
 }
 
-@media screen and (max-width: 768px) {
-  
+.magic {
+  color: #FF3B3F;
 }
 
+.touch {
+  color: #FF3B3F;
+  text-decoration: underline;
+  letter-spacing: 0.05rem;
+}
+
+
+/* hobbies section */
+
+.book input {
+  display: none;
+}
+
+.book img {
+  width: 100%;
+  height: 100%;
+}
+
+.book {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+
+}
+
+#cover {
+  width: 250px;
+  height: 400px;
+}
+
+.flip_book {
+  width: 250px;
+  height: 400px;
+  position: relative;
+  perspective: 1500px;
+}
+
+.flip {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-style: preserve-3d;
+  transform-origin: left;
+  transform: rotateY(0deg);
+  transition: 0.05s;
+  color: #000;
+}
+
+.book p {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 0 13px;
+  box-shadow: inset 20px 0 50px rgba(0,0,0, 0.5) 0 2px 5px rgba(0, 0, 0 , 0.5);
+}
+
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  backface-visibility: hidden;
+  background-color: #000;
+  transform: rotateY(180deg);
+}
+
+.next_btn {
+  position: absolute;
+  bottom: 13px;
+  right: 13px;
+  cursor: pointer;
+  color: #000;
+}
+
+.back_btn {
+  position: absolute;
+  bottom: 13px;
+  right: 13px;
+  cursor: pointer;
+  color: red;
+}
+
+#p1 {
+  z-index: 3;
+}
+
+#p2 {
+  z-index: 2;
+}
+
+#p3 {
+  z-index: 1;
+}
+
+#c1:checked ~ .flip_book #p1 {
+  transform: rotateY(-180deg);
+  z-index: 1;
+}
+
+#c2:checked ~ .flip_book #p2 {
+  transform: rotateY(-180deg);
+  z-index: 2;
+}
+
+#c3:checked ~ .flip_book #p3 {
+  transform: rotateY(-180deg);
+  z-index: 3;
+}
+/* smaller screen */
 @media screen and (max-width: 768px) {
   .active_content {
     display: flex;
