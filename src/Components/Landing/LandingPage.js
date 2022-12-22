@@ -46,7 +46,7 @@ const LandingPage = () => {
   animateBlocks();
 
   return (
-    <section className="blocks-sect">
+    <section className="blocks-sect" id="home">
       <div className="landing_container">
         <h2 className="span1">TRACEY</h2>
         <h2 className="span2">KADENYI</h2>
