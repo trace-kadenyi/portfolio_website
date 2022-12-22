@@ -1,0 +1,150 @@
+.about_sect {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  background: #0f1626;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.links_container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  left: 50%;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+.content_para {
+  font-family: "Lato", sans-serif;
+}
+
+.tabs {
+  padding: 6px;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  background: #fff;
+}
+
+.active_tabs {
+  background: #ff3b3f;
+}
+
+.active_tabs::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+}
+
+button {
+  border: none;
+}
+
+.content {
+  padding: 20px;
+  width: 100%;
+  display: none;
+  color: #fff;
+}
+
+.active_content {
+  display: block;
+}
+
+.about_title {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #ff3b3f;
+  margin: 20px;
+  padding: 5px;
+  width: max-content;
+  font-family: "Poppins", sans-serif;
+  border-right: 2px #ff3b3f solid;
+  letter-spacing: 0.09rem;
+}
+
+.hero {
+  height: 250px;
+  float: left;
+  rotate: 355deg;
+  margin: 20px;
+}
+
+/* skills section */
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.skills h3 {
+  color: #ff3b3f;
+  text-decoration: underline;
+}
+
+.skills ul {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.skills ul li:not(:last-child) {
+  border-right: 2px #ff3b3f solid;
+  padding-right: 10px;
+}
+
+.magic {
+  color: #ff3b3f;
+}
+
+.touch {
+  color: #ff3b3f;
+  text-decoration: underline;
+  letter-spacing: 0.05rem;
+}
+
+/* background section */
+.background_para {
+  margin-bottom: 20px;
+  letter-spacing: 0.05rem;
+  width: 80%;
+}
+
+.background_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.microverse {
+  color: #ff3b3f;
+}
+
+/* smaller screen */
+@media screen and (max-width: 768px) {
+  .active_content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero {
+    max-width: 250px;
+    margin-top: 0;
+  }
+
+  .skill_hero {
+    max-width: 400px;
+  }
+}

@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import anime from "animejs/lib/anime.es.js";
+import { RxDoubleArrowDown } from "react-icons/rx";
 
 import "./landingpage.css";
 import twitter from "../../Assets/Images/twitter.png";
@@ -45,65 +46,65 @@ const LandingPage = () => {
   animateBlocks();
 
   return (
-    <section className="blocks-sect">
+    <section className="blocks-sect" id="home">
       <div className="landing_container">
         <h2 className="span1">TRACEY</h2>
         <h2 className="span2">KADENYI</h2>
         <p className="title">Full Stack Web Developer</p>
-        {/* <h2>Portfolio</h2> */}
-
         {/* contact icons */}
-
         <div className="landing_contact_icons">
           <ul>
             <li>
-           {/* linkedin */}
-          <a href="https://www.linkedin.com/in/tracey-kadenyi/" target="_blank">
-            <img src={linkedin} alt="linkedin"/>
-            <span>LinkedIn</span>
+              {/* linkedin */}
+              <a
+                href="https://www.linkedin.com/in/tracey-kadenyi/"
+                target="_blank"
+              >
+                <img src={linkedin} alt="linkedin" />
+                <span>LinkedIn</span>
               </a>
-              </li>
+            </li>
             {/* github */}
-          <li>
-          <a href="https://github.com/TracK92" target="_blank">
-            <img src={github} alt="github" />
-            <span>GitHub</span>
-              </a>
-            </li>
-            
             <li>
-            {/* angelist */}
-          <a href="https://angel.co/u/tracey-kadenyi" target="_blank">
-            <img src={angelist} alt="angelist" />
-            <span>AngelList</span>
+              <a href="https://github.com/TracK92" target="_blank">
+                <img src={github} alt="github" />
+                <span>GitHub</span>
               </a>
             </li>
 
             <li>
-          {/* twitter */}
-          <a href="https://twitter.com/traci_k7" target="_blank">
-            <img src={twitter} alt="twitter" />
-            <span>Twitter</span>
+              {/* angelist */}
+              <a href="https://angel.co/u/tracey-kadenyi" target="_blank">
+                <img src={angelist} alt="angelist" />
+                <span>AngelList</span>
               </a>
             </li>
 
             <li>
-          {/* medium */}
-          <a href="https://medium.com/@tracekadenyi" target="_blank">
-            <img src={medium} alt="medium" />
-            <span>Medium</span>
+              {/* twitter */}
+              <a href="https://twitter.com/traci_k7" target="_blank">
+                <img src={twitter} alt="twitter" />
+                <span>Twitter</span>
               </a>
             </li>
-            </ul>
+
+            <li>
+              {/* medium */}
+              <a href="https://medium.com/@tracekadenyi" target="_blank">
+                <img src={medium} alt="medium" />
+                <span>Medium</span>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
 
-      {/* <button
+      <button
         onClick={handleScrollDown}
         style={{ zIndex: "10", marginTop: "50px" }}
       >
-        Down
-      </button> */}
+        <RxDoubleArrowDown className="down" />
+      </button>
     </section>
   );
 };
