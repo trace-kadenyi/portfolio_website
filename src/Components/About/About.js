@@ -3,11 +3,11 @@ import React, { useState } from "react";
 import "./about.css";
 import myPic from "../../Assets/Images/my_pic.png";
 import skills from "../../Assets/Images/skills1.gif";
-import cover from "../../Assets/Images/cover.jpeg";
-import one from "../../Assets/Images/1.jpeg";
-import two from "../../Assets/Images/2.jpeg";
-import three from "../../Assets/Images/3.jpeg";
-import four from "../../Assets/Images/4.jpeg";
+// import cover from "../../Assets/Images/cover.jpeg";
+// import one from "../../Assets/Images/1.jpeg";
+// import two from "../../Assets/Images/2.jpeg";
+// import three from "../../Assets/Images/3.jpeg";
+// import four from "../../Assets/Images/4.jpeg";
 
 const About = () => {
   const [active, setActive] = useState(1);
