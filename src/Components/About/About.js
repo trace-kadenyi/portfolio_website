@@ -14,9 +14,8 @@ const About = () => {
   return (
     <section id="about" className="about_sect">
       <div className="about_container">
-        
         <div className="content_tabs">
-             {/* links */}
+          {/* links */}
           <div className="links_container">
             <button
               className={active === 1 ? "tabs active_tabs" : "tabs"}
@@ -37,7 +36,7 @@ const About = () => {
             <img src={myPic} alt="my_pic" className="hero" />
             <p className="content_para">
               Hello there! <br />
-              I'm Tracey, a full stack web developer based in Nairobi, Kenya.{" "}
+              I'm Tracey, a full-stack web developer based in Nairobi, Kenya.{" "}
               <br />
               My primary skills are React/Redux and Ruby on Rails. <br />I love
               the ability that programming gives me to create anything that I
@@ -118,7 +117,7 @@ const About = () => {
               <h3>Soft Skills</h3>
               <ul className="soft_skills">
                 <li>Leadership</li>
-                <li>Pair-programming</li>
+                <li>Pair Programming</li>
                 <li>Remote Work</li>
                 <li>Intercultural Communication</li>
                 <li>Teamwork and Collaboration</li>
@@ -137,40 +136,40 @@ const About = () => {
               <p className="content_para background_para">
                 As a creative person, finding outlets for my creativity has
                 always been a priority for me. I stumbled upon software
-                development by accident and I have never looked back since.
-                Software development presented me with the perfect outlet for my
-                creative side. I enjoy the thrill and challenge of designing and
-                creating complex applications that solve real-world problems.
+                development by accident and, well, how could I resist? Software
+                development presented me with the perfect outlet for my creative
+                side. I enjoy the thrill and challenge of designing and creating
+                complex applications that solve real-world problems.
               </p>
               <p className="content_para background_para">
                 I had been a self-taught developer for 1 year when I joined{" "}
                 <a
                   href="https://www.microverse.org/"
-                  target="_blank" rel="noreferrer"
+                  target="_blank"
+                  rel="noreferrer"
                   className="microverse"
                 >
                   Microverse
                 </a>
-                . There, I found a community of like-minded individuals and
-                together, through 8+ hours of daily pair-programming, we built
-                impressive applications. The pragmatic structure/setting at
-                Microverse equipped me with skills and knwoledge that are
-                required in the workplace. I also learned how to work
-                effectively alongside people from different cultures/backgrounds
-                all over the world.
+                . There, I found a community of like-minded individuals, and
+                together, through 8+ hours of daily pair programming, we built
+                impressive applications primarily using React and Rails. The
+                pragmatic structure/setting at Microverse equipped me with the
+                skills and knowledge that are required in the workplace. I also
+                learned how to work effectively alongside people from different
+                cultures/backgrounds all over the world, some of whom have
+                become treasured friends.
               </p>
 
               <p className="content_para background_para">
-                Presently, I am interested in pursuing a career as a remote full
-                stack web developer. Over the past several months, I have grown
-                to appreciate the power of technology to transform the world. It
-                is my goal to play a part in this by solving real-world problems
-                and challenges one application at a time.
+                Presently, I am interested in pursuing a career as a remote
+                full-stack web developer. Over the past several months, I have
+                grown to appreciate the power of technology to transform the
+                world. It is my goal to play a part in this by solving
+                real-world problems and challenges one application at a time.
               </p>
             </div>
           </div>
-
-       
         </div>
       </div>
     </section>
