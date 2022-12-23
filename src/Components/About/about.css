@@ -25,6 +25,7 @@ ul {
 
 .content_para {
   font-family: "Lato", sans-serif;
+  letter-spacing: 0.05rem;
 }
 
 .tabs {
@@ -111,7 +112,6 @@ button {
 .touch {
   color: #ff3b3f;
   text-decoration: underline;
-  letter-spacing: 0.05rem;
 }
 
 /* background section */
