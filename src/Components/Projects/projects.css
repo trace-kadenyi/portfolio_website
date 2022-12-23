@@ -1,8 +1,12 @@
 .projects_sect {
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
   min-height: 100vh;
   background: #0f1626;
+}
+
+.project_start {
+  margin-top: 40px;
 }
 
 .projects_head {
@@ -15,25 +19,26 @@
   font-family: "Poppins", sans-serif;
   border-right: 2px #ff3b3f solid;
   letter-spacing: 0.09rem;
-  /* rotate: 270deg; */
-  /* position: absolute; */
-  /* top: 40%; */
 }
 
 .projects {
   width: 90vw;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  margin: 0 auto;
+  margin: 0 auto 50px;
   font-family: "Lato", sans-serif;
+  gap: 50px 0;
 }
 
 .card {
   position: relative;
   background: #fff;
-  max-width: 400px;
+  max-width: 380px;
+  /* height: 270px; */
+  height: 300px;
+  /* height: max-content; */
   box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px,
     rgba(255, 255, 255, 0.12) 0px -12px 30px,
     rgba(255, 255, 255, 0.12) 0px 4px 6px,
@@ -59,7 +64,9 @@
 
 .project_info {
   position: absolute;
-  top: 50%;
+  top: 40%;
+  /* top: 35%; */
+  top: 43%;
   bottom: 0;
   background: #fff;
   color: #0f1626;
@@ -69,9 +76,11 @@
 
 .project_title {
   text-align: center;
-  color: #ff3b3f;
+  color: #0f1626;
+  font-weight: 900;
   text-transform: uppercase;
-  text-decoration: overline;
+  text-decoration: underline;
+  letter-spacing: 0.05rem;
 }
 
 .project_desc {
@@ -84,6 +93,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 10px;
   margin-top: 10px;
 }
@@ -98,6 +108,7 @@
 }
 
 /* buttons */
+
 .project_links {
   display: flex;
   justify-content: center;
@@ -106,9 +117,9 @@
 
 .project_link {
   position: relative;
-  width: 140px;
+  width: 100px;
   height: 40px;
-  margin-top: 45px;
+  margin: 30px 5px 0;
   background: #0f1626;
   text-decoration: none;
   display: flex;
@@ -188,7 +199,7 @@
 
 /* project popup */
 
-.project_popup {
+/* .project_popup {
   position: fixed;
   top: 50%;
   left: 0;
@@ -252,7 +263,7 @@
     width: 100%;
     height: 100vh;
   }
-}
+} */
 
 /* smaller screen */
 
