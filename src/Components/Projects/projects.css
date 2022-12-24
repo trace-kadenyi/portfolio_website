@@ -36,16 +36,13 @@
   position: relative;
   background: #fff;
   max-width: 380px;
-  /* height: 270px; */
   height: 300px;
-  /* height: max-content; */
   box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px,
     rgba(255, 255, 255, 0.12) 0px -12px 30px,
     rgba(255, 255, 255, 0.12) 0px 4px 6px,
     rgba(255, 255, 255, 0.17) 0px 12px 13px,
     rgba(255, 255, 255, 0.09) 0px -3px 5px;
   transition: 0.5s;
-  /* box-shadow: rgba(255, 255, 255, 0.4) 0px 5px, rgba(255, 255, 255, 0.3) 0px 10px, rgba(255, 255, 255, 0.2) 0px 15px, rgba(255, 255, 255, 0.1) 0px 20px, rgba(255, 255, 255, 0.05) 0px 25px; */
 }
 
 /* .card:before {
@@ -65,8 +62,6 @@
 
 .project_info {
   position: absolute;
-  top: 40%;
-  /* top: 35%; */
   top: 43%;
   bottom: 0;
   background: #fff;
@@ -78,8 +73,6 @@
 .hide {
   display: none !important;
 }
-
-
 
 .project_title {
   text-align: center;
@@ -202,6 +195,64 @@
   opacity: 1;
   z-index: 10;
   transition-delay: 0.5s;
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.reveal.appear:nth-child(1) {
+  animation: slideInFromRight 1s ease-in-out;
+  transition-delay: 0.5s;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.reveal.appear:nth-child(2) {
+  animation: slideInFromRight 1s ease-in-out;
+  transition-delay: 1s;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.reveal.appear:nth-child(3) {
+  animation: slideInFromRight 1s ease-in-out;
+  transition-delay: 1.5s;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.reveal.appear:nth-child(4) {
+  animation: slideInFromRight 1s ease-in-out;
+  transition-delay: 1s;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.reveal.appear:nth-child(5) {
+  animation: slideInFromRight 1s ease-in-out;
+  transition-delay: 1.5s;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.reveal.appear:nth-child(6) {
+  animation: slideInFromRight 1s ease-in-out;
+  transition-delay: 2s;
+  transform: translateY(0);
+  opacity: 1;
 }
 
 /* project popup */
