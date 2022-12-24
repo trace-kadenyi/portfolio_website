@@ -161,7 +161,7 @@ const Projects = () => {
                     </div>
                     {/* see project */}
                     <div className="project_links">
-                      <a href="#" className="project_link">
+                      <a href="https://doc-appointments.netlify.app/" className="project_link">
                         <span id={project.id} className="link_span">
                           Source
                         </span>
@@ -169,7 +169,7 @@ const Projects = () => {
                           Source
                         </span>
                       </a>
-                      <a href="#" className="project_link">
+                      <a href="https://doc-appointments.netlify.app/" className="project_link">
                         <span id={project.id} className="link_span">
                           Live
                         </span>
