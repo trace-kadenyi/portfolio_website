@@ -31,7 +31,7 @@ const About = () => {
             ></button>
           </div>
           {/* about me intro */}
-          <div className={active === 1 ? "content active_content" : "content"}>
+          <div className={active === 1 ? "active_content" : "content"}>
             <h1 className="about_title">About Me</h1>
             <img src={myPic} alt="my_pic" className="hero" />
             <p className="content_para">
@@ -55,7 +55,7 @@ const About = () => {
           {/* skills section */}
           <div
             className={
-              active === 2 ? "content active_content active_two" : "content"
+              active === 2 ? "active_content active_two" : "content"
             }
           >
             <h1 className="about_title">Skills</h1>
@@ -130,7 +130,7 @@ const About = () => {
             </div>
           </div>
           {/* background section */}
-          <div className={active === 3 ? "content active_content" : "content"}>
+          <div className={active === 3 ? "active_content" : "content"}>
             <h1 className="about_title">Background</h1>
             <div className=" background_content">
               <p className="content_para background_para">
