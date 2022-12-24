@@ -116,6 +116,25 @@ const Projects = () => {
     });
   }
 
+  // appear when in view
+  window.addEventListener("scroll", reveal);
+
+  function reveal() {
+    const reveals = document.querySelectorAll(".reveal");
+
+    for (let i = 0; i < reveals.length; i++) {
+      const windowHeight = window.innerHeight;
+      const revealTop = reveals[i].getBoundingClientRect().top;
+      const revealPoint = 50;
+
+      if (revealTop < windowHeight - revealPoint) {
+        reveals[i].classList.add("appear");
+      } else {
+        reveals[i].classList.remove("appear");
+      }
+    }
+  }
+
   return (
     <section className="projects_sect" id="projects">
       <div className="project_start">
@@ -124,7 +143,7 @@ const Projects = () => {
           {/* single project */}
           {projectsContainer.map((project) => {
             return (
-              <div className={project.id <= 3 ? "project" : "project hidden_project hide"}
+              <div className={project.id <= 3 ? "project reveal" : "project reveal hidden_project hide"}
                 key={project.id}>
                 <div className="card">
                   <div className="project_img">
