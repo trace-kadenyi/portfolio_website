@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 
 import "./contact.css";
 import twitter from "../../Assets/Images/twitter.png";
@@ -8,6 +9,41 @@ import medium from "../../Assets/Images/medium.png";
 import angelist from "../../Assets/Images/angelist.png";
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const feedback = document.querySelector(".feedback");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const formData = {
+      name,
+      email,
+      message,
+    };
+
+    const emailChars = /^[a-z0-9@.]+$/;
+    // email validation
+    if (!emailChars.test(email)) {
+      feedback.textContent = "Please enter your email correctly";
+      feedback.style.color = "red";
+    } else {
+      await axios.post(
+        "https://getform.io/f/0af932b0-6945-43c1-ba97-1c056995e29f",
+        formData,
+        { headers: { Accept: "application/json" } }
+      );
+      // set values to empty
+      setName("");
+      setEmail("");
+      setMessage("");
+
+      feedback.textContent = "Message sent successfully!";
+      feedback.style.color = "green";
+    }
+  };
+
   return (
     <section className="contact_sect" id="contact">
       <div className="contact_start">
@@ -22,7 +58,6 @@ const Contact = () => {
               fit for, I'd love to hear about it.
             </p>
             <p className="email_para">
-              {/* <span className="email:head">Email:</span>{" "} */}
               <span className="email">
                 <a
                   href="mailto:treykadenyi@gmail.com"
@@ -98,8 +133,47 @@ const Contact = () => {
           </div>
           {/* card form */}
           <div className="contact_form">
-            <form>
-              
+            <div className="feedback"></div>
+            <form onSubmit={handleSubmit}>
+              <div className="form_group">
+                <label htmlFor="name">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  placeholder="Enter your name"
+                />
+              </div>
+              <div className="form_group">
+                <label htmlFor="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="Enter your email"
+                />
+              </div>
+              <div className="form_group">
+                <label htmlFor="message">Message</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  cols="30"
+                  rows="10"
+                  placeholder="Write your message"
+                />
+              </div>
+              <div className="form_group">
+                <button type="submit" className="submit_btn">
+                  Send Message
+                </button>
+              </div>
             </form>
           </div>
         </div>
