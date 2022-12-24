@@ -70,10 +70,6 @@
   padding: 20px;
 }
 
-.hide {
-  display: none !important;
-}
-
 .project_title {
   text-align: center;
   color: #0f1626;
@@ -222,14 +218,14 @@
 
 .reveal.appear:nth-child(2) {
   animation: slideInFromRight 1s ease-in-out;
-  transition-delay: 1s;
+  transition-delay: 0.75s;
   transform: translateY(0);
   opacity: 1;
 }
 
 .reveal.appear:nth-child(3) {
   animation: slideInFromRight 1s ease-in-out;
-  transition-delay: 1.5s;
+  transition-delay: 1s;
   transform: translateY(0);
   opacity: 1;
 }
@@ -243,85 +239,55 @@
 
 .reveal.appear:nth-child(5) {
   animation: slideInFromRight 1s ease-in-out;
-  transition-delay: 1.5s;
+  transition-delay: 1.25s;
   transform: translateY(0);
   opacity: 1;
 }
 
 .reveal.appear:nth-child(6) {
   animation: slideInFromRight 1s ease-in-out;
-  transition-delay: 2s;
+  transition-delay: 1.5s;
   transform: translateY(0);
   opacity: 1;
 }
 
-/* project popup */
-
-/* .project_popup {
-  position: fixed;
-  top: 50%;
-  left: 0;
-  width: 0;
-  height: 0;
-  transform: translateY(-50%);
-  background: #0f1626;
-  overflow: hidden;
-  z-index: 2000;
+.hide {
+  display: none !important;
 }
 
-.popup_content {
-  background: white;
-  padding: 30px 20px;
-  width: 100%;
-  max-width: 550px;
-  margin: 0 auto;
-  opacity: 0;
+.see_more {
+  position: relative;
 }
 
-.center {
-  transform: translate(-50%, -50%);
+.more_btn {
+  color: white;
+  font-size: 50px;
+  margin: 80px auto 30px;
+  rotate: 90deg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
 }
 
-.popup_content .popup_close {
+.more_span {
   position: absolute;
   top: 20px;
-  right: 20px;
-  font-size: 30px;
-  width: 40px;
-  height: 40px;
-  text-align: center;
+  left: 52%;
+  border: none;
+  background: #0f1626;
   color: white;
   cursor: pointer;
-  border-radius: 50%;
-  font-weight: bold;
-  color: #ff3b3f;
-  cursor: pointer;
+  text-decoration: underline;
+  transition: 0.5s;
 }
 
-.project_popup.active {
-  animation: popupAnimation 1500ms ease-in-out forwards;
+.more_span:hover {
+  background: #ff3b3f;
+  padding: 5px;
+  border-radius: 10px;
+  text-decoration: none;
 }
-
-.project_popup.active .popup_content {
-  opacity: 1;
-  transition: all 300ms ease-in-out 1500ms;
-}
-
-@keyframes popupAnimation {
-  0% {
-    width: 0;
-    height: 0;
-  }
-
-  50% {
-    width: 100%;
-    height: 2px;
-  }
-  100% {
-    width: 100%;
-    height: 100vh;
-  }
-} */
 
 /* smaller screen */
 
@@ -329,10 +295,15 @@
   .projects {
     justify-content: center;
   }
+
+   .more_span {
+    left: 55%;
+  }
 }
 
 @media screen and (max-width: 500px) {
   .project_link {
     margin-top: 10px;
   }
+
 }
