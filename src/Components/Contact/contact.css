@@ -1,0 +1,112 @@
+.contact_sect {
+   position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  background: #0f1626;
+}
+
+.contact_start {
+  margin-top: 60px;
+}
+
+.contact_head {
+  font-size: 3rem;
+  font-weight: 600;
+  color: rgb(255, 59, 63);
+  margin: 0 20px 20px;
+  padding: 5px;
+  width: max-content;
+  font-family: "Poppins", sans-serif;
+  border-right: 2px #ff3b3f solid;
+  letter-spacing: 0.09rem;
+}
+
+.contact_content {
+  margin: 0 auto;
+  width: 80vw;
+  background: #fff;
+  height: 70vh;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact_card {
+  position: absolute;
+  top: 35%;
+  left: 5%;
+  width: 300px;
+  height: 350px;
+  background: rgb(3, 49, 3);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+
+.details_head {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.contact_touch {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.contact_touch:hover {
+  color: #FF3B3F;
+}
+
+.contact_sect_icons ul {
+  display: flex;
+  gap: 0.5rem;
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+
+.contact_sect_icons ul li a img {
+  width: 30px;
+  height: 30px;
+  /* border: 1px solid #FF3B3F; */
+  border-radius: 50%;
+  display: block;
+  position: relative;
+}
+
+.contact_sect_icons ul li a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  /* gap: 0.5rem; */
+}
+
+.contact_sect_icons ul li a span {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  position: absolute;
+  bottom: 50px;
+  color: #FF3B3F;
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+.contact_sect_icons:hover  ul li:hover a span {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+/* smaller screen */
+
+@media screen and (max-width: 550px) {
+.contact_head {
+  font-size: 16px;
+}
+}
