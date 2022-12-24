@@ -52,14 +52,23 @@ button {
 }
 
 .content {
+  /* padding: 20px; */
+  /* width: 100%; */
+  /* display: none; */
+  position: absolute;
+  /* color: #fff; */
+  clip-path: circle(0% at 50% 50%);
+}
+
+.active_content {
   padding: 20px;
   width: 100%;
   display: none;
   color: #fff;
-}
-
-.active_content {
   display: block;
+  clip-path: circle(100% at 50% 50%);
+  transition: 2s;
+  transition-property: clip-path;
 }
 
 .about_title {
