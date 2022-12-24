@@ -53,19 +53,17 @@
 }
 
 .feedback {
-  color: white;
+  font-weight: bold;
 }
 
 .details_head {
   margin-bottom: 20px;
-  /* font-size: 15px; */
   text-align: center;
 }
 
 .contact_touch {
   text-decoration: underline;
   color: black;
-  /* color: #fff; */
 }
 
 
@@ -175,6 +173,7 @@ form {
   .contact_form {
     position: static;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 20px auto 0;
