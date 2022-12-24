@@ -1,22 +1,11 @@
 import React, { useState } from "react";
+import { TiArrowForwardOutline } from "react-icons/ti";
 
 import "./projects.css";
 import project1 from "../../Assets/Images/doc.png";
 
 const Projects = () => {
   const [more, setMore] = useState(false);
-
-  // add event listener to the popup link to open the popup
-  // const openPopup = (e) => {
-  //   e.preventDefault();
-  //   document.querySelector(".project_popup").classList.add("active");
-  // };
-
-  // // close popup
-  // const closePopup = (e) => {
-  //   e.preventDefault();
-  //   document.querySelector(".project_popup").classList.remove("active");
-  // };
 
   // create an array of all the projects
   const projectsContainer = [
@@ -90,7 +79,7 @@ const Projects = () => {
       ],
       image: project1,
     },
-     {
+    {
       id: 6,
       title: "Spa",
       description:
@@ -106,15 +95,22 @@ const Projects = () => {
     },
   ];
 
-// toggle hidden projects
+  // toggle hidden projects
   const toggleHiddenProjects = (e) => {
     setMore(!more);
     e.target.innerText = more ? "See More" : "See Less";
+    // rotate arrow
+    const arrow = document.querySelector(".more_btn");
+    if (e.target.innerText === "See Less") {
+      arrow.style.rotate = "270deg";
+    } else if (e.target.innerText === "See More") {
+      arrow.style.rotate = "90deg";
+    }
     const hiddenProjects = document.querySelectorAll(".hidden_project");
     hiddenProjects.forEach((project) => {
       project.classList.toggle("hide");
     });
-  }
+  };
 
   // appear when in view
   window.addEventListener("scroll", reveal);
@@ -143,8 +139,14 @@ const Projects = () => {
           {/* single project */}
           {projectsContainer.map((project) => {
             return (
-              <div className={project.id <= 3 ? "project reveal" : "project reveal hidden_project hide"}
-                key={project.id}>
+              <div
+                className={
+                  project.id <= 3
+                    ? "project reveal"
+                    : "project reveal hidden_project hide"
+                }
+                key={project.id}
+              >
                 <div className="card">
                   <div className="project_img">
                     <img src={project.image} alt={project.title} />
@@ -185,74 +187,14 @@ const Projects = () => {
       </div>
       {/* see more */}
       <div className="see_more">
-        <button className="more_btn" onClick={toggleHiddenProjects}>See More</button>
+        <TiArrowForwardOutline className="more_btn" />
+        {/* <span className="more_span">See More</span> */}
+        <button className="more_span" onClick={toggleHiddenProjects}>
+          See More
+        </button>
       </div>
     </section>
   );
 };
 
 export default Projects;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{
-  /* popup */
-}
-
-{
-  /* {project.id === e.target.id ? (
-                      <div className="project_popup">
-                        <div className="popup_content">
-                          <div className="popup_close" onClick={closePopup}>
-                            &times;
-                          </div>
-                          <h1>{project.title}</h1>
-                          <p>{project.popup_description}</p>
-                        </div>
-                      </div>
-                    ) : (
-                        ""
-                    )}
-                     */
-}
-
-{
-  /* <div className="project_popup">
-                      <div className="popup_content">
-                        <div className="popup_close" onClick={closePopup}>
-                          &times;
-                        </div>
-                        <h1>{project.title}</h1>
-                        <p>
-                          {project.popup_description}
-                        </p>
-                      </div>
-                    </div> */
-}
