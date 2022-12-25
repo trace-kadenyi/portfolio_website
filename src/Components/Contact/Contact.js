@@ -41,13 +41,6 @@ const Contact = () => {
         formData,
         { headers: { Accept: "application/json" } }
       );
-      // set values to empty
-      // setName("");
-      // setEmail("");
-      // setMessage("");
-
-      // feedback.textContent = "Message sent successfully!";
-      // feedback.style.color = "green";
     }
   };
 
