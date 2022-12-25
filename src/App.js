@@ -4,6 +4,7 @@ import Navbar from './Components/Navigation/Navbar';
 import About from './Components/About/About';
 import Projects from './Components/Projects/Projects';
 import Contact from './Components/Contact/Contact';
+import Testimonials from './Components/Testimonials/Testimonials';
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <LandingPage />
       <About />
       <Projects />
+      <Testimonials />
       <Contact />
     </div>
   );
