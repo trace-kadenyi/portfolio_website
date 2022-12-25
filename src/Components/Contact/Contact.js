@@ -29,18 +29,25 @@ const Contact = () => {
       feedback.textContent = "Please enter your email correctly";
       feedback.style.color = "red";
     } else {
+      feedback.textContent = "Message sent successfully!";
+      feedback.style.color = "green";
+
+      setName("");
+      setEmail("");
+      setMessage("");
+
       await axios.post(
         "https://getform.io/f/0af932b0-6945-43c1-ba97-1c056995e29f",
         formData,
         { headers: { Accept: "application/json" } }
       );
       // set values to empty
-      setName("");
-      setEmail("");
-      setMessage("");
+      // setName("");
+      // setEmail("");
+      // setMessage("");
 
-      feedback.textContent = "Message sent successfully!";
-      feedback.style.color = "green";
+      // feedback.textContent = "Message sent successfully!";
+      // feedback.style.color = "green";
     }
   };
 
@@ -141,6 +148,7 @@ const Contact = () => {
                   type="text"
                   name="name"
                   id="name"
+                  required
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   placeholder="Enter your name"
@@ -152,6 +160,7 @@ const Contact = () => {
                   type="email"
                   name="email"
                   id="email"
+                  required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Enter your email"
@@ -162,6 +171,7 @@ const Contact = () => {
                 <textarea
                   name="message"
                   id="message"
+                  required
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   cols="30"
