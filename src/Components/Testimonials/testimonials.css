@@ -39,7 +39,14 @@
   flex-direction: column-reverse;
 }
 
-.active_content {
+.active_content_testimonials {
+  padding: 20px;
+  width: 100%;
+  display: none;
+  color: #fff;
+  clip-path: circle(100% at 50% 50%);
+  transition: 2s;
+  transition-property: clip-path;
   display: flex;
   flex-direction: column;
   justify-content: center;

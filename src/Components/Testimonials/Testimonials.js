@@ -50,7 +50,9 @@ const Testimonials = () => {
 
         <div className="testimonials_container">
           {/* first testimonial */}
-          <div className={active === 1 ? "active_content" : "content"}>
+          <div
+            className={active === 1 ? "active_content_testimonials" : "content"}
+          >
             <div className="testimonials_card">
               <div className="testimonials_content">
                 <div className="testimonials_text">
@@ -86,7 +88,9 @@ const Testimonials = () => {
           </div>
 
           {/* second testimonial */}
-          <div className={active === 2 ? "active_content" : "content"}>
+          <div
+            className={active === 2 ? "active_content_testimonials" : "content"}
+          >
             <div className="testimonials_card">
               <div className="testimonials_content">
                 <div className="testimonials_text">
@@ -116,7 +120,9 @@ const Testimonials = () => {
           </div>
 
           {/* third testimonial */}
-          <div className={active === 3 ? "active_content" : "content"}>
+          <div
+            className={active === 3 ? "active_content_testimonials" : "content"}
+          >
             <div className="testimonials_card">
               <div className="testimonials_content">
                 <div className="testimonials_text">
@@ -145,7 +151,9 @@ const Testimonials = () => {
           </div>
 
           {/* fifth testimonial */}
-          <div className={active === 4 ? "active_content" : "content"}>
+          <div
+            className={active === 4 ? "active_content_testimonials" : "content"}
+          >
             <div className="testimonials_card">
               <div className="testimonials_content">
                 <div className="testimonials_text">
