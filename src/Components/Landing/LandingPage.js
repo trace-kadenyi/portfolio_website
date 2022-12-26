@@ -3,11 +3,11 @@ import anime from "animejs/lib/anime.es.js";
 import { RxDoubleArrowDown } from "react-icons/rx";
 
 import "./landingpage.css";
-import twitter from "../../Assets/Images/twitter.png";
-import linkedin from "../../Assets/Images/linkedin.png";
-import github from "../../Assets/Images/github.png";
-import medium from "../../Assets/Images/medium.png";
-import angelist from "../../Assets/Images/angelist.png";
+import twitter from "../../Assets/Images/contact_icons/twitter.png";
+import linkedin from "../../Assets/Images/contact_icons/linkedin.png";
+import github from "../../Assets/Images/contact_icons/github.png";
+import medium from "../../Assets/Images/contact_icons/medium.png";
+import angelist from "../../Assets/Images/contact_icons/angelist.png";
 
 const LandingPage = () => {
   // select container div after component mounts
@@ -117,7 +117,9 @@ const LandingPage = () => {
       </div>
 
       <button style={{ zIndex: "10", marginTop: "50px" }}>
-        <a href="#about"><RxDoubleArrowDown className="down" /></a>
+        <a href="#about">
+          <RxDoubleArrowDown className="down" />
+        </a>
       </button>
     </section>
   );
