@@ -3,11 +3,11 @@ import anime from "animejs/lib/anime.es.js";
 import { RxDoubleArrowDown } from "react-icons/rx";
 
 import "./landingpage.css";
-import twitter from "../../Assets/Images/twitter.png";
-import linkedin from "../../Assets/Images/linkedin.png";
-import github from "../../Assets/Images/github.png";
-import medium from "../../Assets/Images/medium.png";
-import angelist from "../../Assets/Images/angelist.png";
+import twitter from "../../Assets/Images/contact_icons/twitter.png";
+import linkedin from "../../Assets/Images/contact_icons/linkedin.png";
+import github from "../../Assets/Images/contact_icons/github.png";
+import medium from "../../Assets/Images/contact_icons/medium.png";
+import angelist from "../../Assets/Images/contact_icons/angelist.png";
 
 const LandingPage = () => {
   // select container div after component mounts
@@ -22,13 +22,13 @@ const LandingPage = () => {
   }, []);
 
   // Scroll down function
-  const handleScrollDown = () => {
-    window.scrollBy({
-      top: window.innerHeight,
-      left: 0,
-      behavior: "smooth",
-    });
-  };
+  // const handleScrollDown = () => {
+  //   window.scrollBy({
+  //     top: window.innerHeight,
+  //     left: 0,
+  //     behavior: "smooth",
+  //   });
+  // };
 
   // Animateblocks function
   const animateBlocks = () => {
@@ -116,11 +116,10 @@ const LandingPage = () => {
         </div>
       </div>
 
-      <button
-        onClick={handleScrollDown}
-        style={{ zIndex: "10", marginTop: "50px" }}
-      >
-        <RxDoubleArrowDown className="down" />
+      <button style={{ zIndex: "10", marginTop: "50px" }}>
+        <a href="#about">
+          <RxDoubleArrowDown className="down" />
+        </a>
       </button>
     </section>
   );

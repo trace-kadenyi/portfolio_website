@@ -52,11 +52,7 @@ button {
 }
 
 .content {
-  /* padding: 20px; */
-  /* width: 100%; */
-  /* display: none; */
   position: absolute;
-  /* color: #fff; */
   clip-path: circle(0% at 50% 50%);
 }
 

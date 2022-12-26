@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import axios from "axios";
 
 import "./contact.css";
-import twitter from "../../Assets/Images/twitter.png";
-import linkedin from "../../Assets/Images/linkedin.png";
-import github from "../../Assets/Images/github.png";
-import medium from "../../Assets/Images/medium.png";
-import angelist from "../../Assets/Images/angelist.png";
+import twitter from "../../Assets/Images/contact_icons/twitter.png";
+import linkedin from "../../Assets/Images/contact_icons/linkedin.png";
+import github from "../../Assets/Images/contact_icons/github.png";
+import medium from "../../Assets/Images/contact_icons/medium.png";
+import angelist from "../../Assets/Images/contact_icons/angelist.png";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -41,13 +41,6 @@ const Contact = () => {
         formData,
         { headers: { Accept: "application/json" } }
       );
-      // set values to empty
-      // setName("");
-      // setEmail("");
-      // setMessage("");
-
-      // feedback.textContent = "Message sent successfully!";
-      // feedback.style.color = "green";
     }
   };
 
