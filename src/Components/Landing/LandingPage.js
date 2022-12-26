@@ -22,13 +22,13 @@ const LandingPage = () => {
   }, []);
 
   // Scroll down function
-  const handleScrollDown = () => {
-    window.scrollBy({
-      top: window.innerHeight,
-      left: 0,
-      behavior: "smooth",
-    });
-  };
+  // const handleScrollDown = () => {
+  //   window.scrollBy({
+  //     top: window.innerHeight,
+  //     left: 0,
+  //     behavior: "smooth",
+  //   });
+  // };
 
   // Animateblocks function
   const animateBlocks = () => {
@@ -116,11 +116,8 @@ const LandingPage = () => {
         </div>
       </div>
 
-      <button
-        onClick={handleScrollDown}
-        style={{ zIndex: "10", marginTop: "50px" }}
-      >
-        <RxDoubleArrowDown className="down" />
+      <button style={{ zIndex: "10", marginTop: "50px" }}>
+        <a href="#about"><RxDoubleArrowDown className="down" /></a>
       </button>
     </section>
   );
