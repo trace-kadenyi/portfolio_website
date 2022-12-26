@@ -2,10 +2,13 @@ import React, { useState } from "react";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 
 import "./testimonials.css";
-import charles from "../../Assets/Images/charles.png";
-import mohamed from "../../Assets/Images/aachour.png";
-import tushar from "../../Assets/Images/tushar.png";
-import clifford from "../../Assets/Images/clifford.png";
+import charles from "../../Assets/Images/testimonials/charles.png";
+import mohamed from "../../Assets/Images/testimonials/aachour.png";
+import tushar from "../../Assets/Images/testimonials/tushar.png";
+import clifford from "../../Assets/Images/testimonials/clifford.png";
+import alex from "../../Assets/Images/testimonials/alex.png";
+import eyasu from "../../Assets/Images/testimonials/eyasu.png";
+import tarek from "../../Assets/Images/testimonials/tarek.png";
 
 const Testimonials = () => {
   const [active, setActive] = useState(1);
@@ -42,10 +45,18 @@ const Testimonials = () => {
             className={active === 4 ? "tabs active_tabs" : "tabs"}
             onClick={() => handleTabs(4)}
           ></button>
-          {/* <button
+          <button
             className={active === 5 ? "tabs active_tabs" : "tabs"}
             onClick={() => handleTabs(5)}
-          ></button> */}
+          ></button>
+          <button
+            className={active === 6 ? "tabs active_tabs" : "tabs"}
+            onClick={() => handleTabs(6)}
+          ></button>
+          <button
+            className={active === 7 ? "tabs active_tabs" : "tabs"}
+            onClick={() => handleTabs(7)}
+          ></button>
         </div>
 
         <div className="testimonials_container">
@@ -150,7 +161,7 @@ const Testimonials = () => {
             </div>
           </div>
 
-          {/* fifth testimonial */}
+          {/* fourth testimonial */}
           <div
             className={active === 4 ? "active_content_testimonials" : "content"}
           >
@@ -188,6 +199,102 @@ const Testimonials = () => {
               </div>
             </div>
           </div>
+
+          {/* fifth testimonial */}
+          <div
+            className={active === 5 ? "active_content_testimonials" : "content"}
+          >
+            <div className="testimonials_card">
+              <div className="testimonials_content">
+                <div className="testimonials_text">
+                  <p className="testimonials_span1">
+                    <span className="quote">
+                      <FaQuoteLeft />
+                    </span>
+                    Tracey is a very talented developer. Her understanding of
+                    algorithms is at an enviable level. She is always ready to
+                    tackle a problem and help others. She is also positive and
+                    communicative. I recommend her.
+                    <span className="quote">
+                      <FaQuoteRight />
+                    </span>
+                  </p>
+                </div>
+              </div>
+              <div className="testimonials_img">
+                <img src={alex} alt="testimonials" />
+                <div className="identity">
+                  <p className="testimonials_name">Aleksandra Ujvari</p>
+                  <p className="origin">Vojvodina, Serbia</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* sixth testimonial */}
+          <div
+            className={active === 6 ? "active_content_testimonials" : "content"}
+          >
+            <div className="testimonials_card">
+              <div className="testimonials_content">
+                <div className="testimonials_text">
+                  <p className="testimonials_span1">
+                    <span className="quote">
+                      <FaQuoteLeft />
+                    </span>
+                    We’ve joined our hands on several projects and Tracey is one
+                    of the best people I had as a partner. I highly recommend
+                    her expertise to any person looking for a Full-stack Web
+                    Developer. She is the most profound person I have met and
+                    her ability to tackle any problem with a warm smile is
+                    remarkable. Tracey would be an appreciated member of any
+                    team.
+                    <span className="quote">
+                      <FaQuoteRight />
+                    </span>
+                  </p>
+                </div>
+              </div>
+              <div className="testimonials_img">
+                <img src={eyasu} alt="testimonials" />
+                <div className="identity">
+                  <p className="testimonials_name">Eyasu Teshome</p>
+                  <p className="origin">Jiangsu, China</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* seventh testimonial */}
+          <div
+            className={active === 7 ? "active_content_testimonials" : "content"}
+          >
+            <div className="testimonials_card">
+              <div className="testimonials_content">
+                <div className="testimonials_text">
+                  <p className="testimonials_span1">
+                    <span className="quote">
+                      <FaQuoteLeft />
+                    </span>
+                    Tracey is a great developer. Apart from being on time, she
+                    always thinks out of the box and provides creative
+                    solutions. We worked together on one project, but I hope we
+                    will have the chance to work together again.
+                    <span className="quote">
+                      <FaQuoteRight />
+                    </span>
+                  </p>
+                </div>
+              </div>
+              <div className="testimonials_img">
+                <img src={tarek} alt="testimonials" />
+                <div className="identity">
+                  <p className="testimonials_name">Tarek Yosry</p>
+                  <p className="origin">Cairo, Egypt</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -195,37 +302,3 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
-
-{
-  /* {testimonialsContainer.map((testimonial) => {
-            return (
-              <div className="testimonials_card" key={testimonial.id}>
-                <div className="testimonials_content">
-                  <div className="testimonials_text">
-                    <p className="testimonials_span1">
-                      <span className="quote">
-                        <FaQuoteLeft />
-                      </span>
-                      {testimonial.description}
-                    </p>{" "}
-                    <br />
-                    <p>
-                      {testimonial.description2}{" "}
-                      <span className="quote">
-                        <FaQuoteRight />
-                      </span>
-                      .
-                    </p>
-                  </div>
-                </div>
-                <div className="testimonials_img">
-                  <img src={testimonial.image} alt="testimonials" />
-                  <div className="identity">
-                    <p className="testimonials_name">{testimonial.name}</p>
-                    <p className="origin">{testimonial.location}</p>
-                  </div>
-                </div>
-              </div>
-            );
-          })} */
-}
