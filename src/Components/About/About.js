@@ -54,9 +54,7 @@ const About = () => {
           </div>
           {/* skills section */}
           <div
-            className={
-              active === 2 ? "active_content active_two" : "content"
-            }
+            className={active === 2 ? "active_content active_two" : "content"}
           >
             <h1 className="about_title">Skills</h1>
             <img src={skills} alt="skills" className="hero skill_hero" />
@@ -70,7 +68,7 @@ const About = () => {
                 <li>Ruby</li>
               </ul>
 
-              <hr />
+              <hr className="line" />
               {/* frameworks/libraries */}
               <h3>Frameworks/Libraries</h3>
               <ul className="frameworks">
@@ -82,7 +80,7 @@ const About = () => {
                 <li>Font Awesome</li>
               </ul>
 
-              <hr />
+              <hr className="line"/>
               {/* tools */}
               <h3>Tools</h3>
               <ul className="tools">
@@ -94,7 +92,7 @@ const About = () => {
                 <li>Postman</li>
               </ul>
 
-              <hr />
+              <hr className="line"/>
               {/* databases */}
               <h3>Databases</h3>
               <ul className="databases">
@@ -102,7 +100,7 @@ const About = () => {
                 <li>SQLite</li>
               </ul>
 
-              <hr />
+              <hr className="line"/>
               {/* other */}
               <h3>Supplementary Skills</h3>
               <ul className="other">
@@ -112,7 +110,7 @@ const About = () => {
                 <li>Jest</li>
                 <li>RSpec</li>
               </ul>
-
+              <hr className="line"/>
               {/* soft skills */}
               <h3>Soft Skills</h3>
               <ul className="soft_skills">
