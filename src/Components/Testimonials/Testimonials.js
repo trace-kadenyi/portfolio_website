@@ -9,6 +9,7 @@ import clifford from "../../Assets/Images/testimonials/clifford.png";
 import alex from "../../Assets/Images/testimonials/alex.png";
 import eyasu from "../../Assets/Images/testimonials/eyasu.png";
 import tarek from "../../Assets/Images/testimonials/tarek.png";
+import priscilla from "../../Assets/Images/testimonials/priscilla.png";
 
 const Testimonials = () => {
   const [active, setActive] = useState(1);
@@ -57,6 +58,10 @@ const Testimonials = () => {
             className={active === 7 ? "tabs active_tabs" : "tabs"}
             onClick={() => handleTabs(7)}
           ></button>
+          <button
+            className={active === 8 ? "tabs active_tabs" : "tabs"}
+            onClick={() => handleTabs(8)}
+          ></button>
         </div>
 
         <div className="testimonials_container">
@@ -97,6 +102,7 @@ const Testimonials = () => {
               </div>
             </div>
           </div>
+          {/* end */}
 
           {/* second testimonial */}
           <div
@@ -129,6 +135,7 @@ const Testimonials = () => {
               </div>
             </div>
           </div>
+          {/* end */}
 
           {/* third testimonial */}
           <div
@@ -160,6 +167,7 @@ const Testimonials = () => {
               </div>
             </div>
           </div>
+          {/* end */}
 
           {/* fourth testimonial */}
           <div
@@ -199,6 +207,7 @@ const Testimonials = () => {
               </div>
             </div>
           </div>
+          {/* end */}
 
           {/* fifth testimonial */}
           <div
@@ -230,6 +239,7 @@ const Testimonials = () => {
               </div>
             </div>
           </div>
+          {/* end */}
 
           {/* sixth testimonial */}
           <div
@@ -264,10 +274,50 @@ const Testimonials = () => {
               </div>
             </div>
           </div>
+          {/* end */}
 
-          {/* seventh testimonial */}
+          {/* eighth testimonial */}
           <div
             className={active === 7 ? "active_content_testimonials" : "content"}
+          >
+            <div className="testimonials_card">
+              <div className="testimonials_content">
+                <div className="testimonials_text">
+                  <p className="testimonials_span1">
+                    <span className="quote">
+                      <FaQuoteLeft />
+                    </span>
+                    I am writing this to recommend Tracey Kadenyi for the post
+                    of Full-Stack Web Developer. I had collaborated with Tracey
+                    and have noticed her work and assure you that Tracey is an
+                    excellent JavaScript and Ruby programmer.
+                  </p>{" "}
+                  <br />
+                  <p>
+                    She is an excellent team member and works in coordination
+                    with rest of the team. She encourages other team members to
+                    achieve their targets. Tracey has excellent communication
+                    skills and has the expertise to deliver project(s) assigned
+                    to her on time.
+                    <span className="quote">
+                      <FaQuoteRight />
+                    </span>
+                  </p>
+                </div>
+              </div>
+              <div className="testimonials_img">
+                <img src={priscilla} alt="testimonials" />
+                <div className="identity">
+                  <p className="testimonials_name">Priscilla Oyebade</p>
+                  <p className="origin">Lagos State, Nigeria</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* end */}
+          {/* seventh testimonial */}
+          <div
+            className={active === 8 ? "active_content_testimonials" : "content"}
           >
             <div className="testimonials_card">
               <div className="testimonials_content">
@@ -295,6 +345,7 @@ const Testimonials = () => {
               </div>
             </div>
           </div>
+          {/* end */}
         </div>
       </div>
     </section>
