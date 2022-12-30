@@ -25,7 +25,7 @@ const Projects = () => {
         "Redux",
         "Ruby on Rails",
         "PostgreSQL",
-        "Bootstrap",
+        "Pair Programming"
       ],
       image: project1,
       live_link: "https://doc-appointments.netlify.app/",
@@ -40,9 +40,7 @@ const Projects = () => {
       technologies: [
         "React",
         "Redux",
-        "Ruby on Rails",
-        "PostgreSQL",
-        "Bootstrap",
+        "API"
       ],
       image: project2,
       live_link: "https://papaya-sunburst-a9d343.netlify.app/",
@@ -54,11 +52,9 @@ const Projects = () => {
       description:
         "Cookbook is a web application that eases the process of booking doctors' appointments for patients by allowing them to book appointments online.",
       technologies: [
-        "React",
-        "Redux",
-        "Ruby on Rails",
-        "PostgreSQL",
-        "Bootstrap",
+        "HTML",
+        "CSS",
+        "Netlify"
       ],
       image: project3,
       live_link: "https://kind-yonath-62b539.netlify.app/",
@@ -71,11 +67,9 @@ const Projects = () => {
       description:
         "Co Appointments is a web application that eases the process of booking doctors' appointments for patients by allowing them to book appointments online.",
       technologies: [
+        "Webpack",
         "React",
-        "Redux",
-        "Ruby on Rails",
-        "PostgreSQL",
-        "Bootstrap",
+        "REST API"
       ],
       image: project4,
       live_link: "https://playful-dragon-df58b2.netlify.app/",
@@ -89,10 +83,8 @@ const Projects = () => {
         "Stadium is a web application that eases the process of booking doctors' appointments for patients by allowing them to book appointments online.",
       technologies: [
         "React",
-        "Redux",
-        "Ruby on Rails",
-        "PostgreSQL",
-        "Bootstrap",
+        "Single-Page Application",
+        "Pair Programming"
       ],
       image: project6,
       live_link: "https://ephemeral-peony-377e43.netlify.app/",
@@ -107,9 +99,8 @@ const Projects = () => {
       technologies: [
         "React",
         "Redux",
-        "Ruby on Rails",
-        "PostgreSQL",
-        "Bootstrap",
+        "REST API",
+        "Pair Programming"
       ],
       image: project8,
       live_link: "https://coruscating-genie-d8a5ca.netlify.app/",
