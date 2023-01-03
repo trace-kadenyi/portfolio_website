@@ -2,12 +2,13 @@
   position: relative;
   overflow: hidden;
   min-height: 100vh;
-  background: hwb(222 6% 85%);
+  background: #0f1626;
 }
 
 .contact_start {
-  margin-top: 100px;
+  margin: 100px auto 30px;
   height: 100%;
+  
 }
 
 .contact_head {
@@ -50,6 +51,7 @@
   justify-content: center;
   align-items: center;
   font-size: 15px;
+  /* opacity: 0.8; */
 }
 
 .feedback {
@@ -135,6 +137,7 @@ form {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  /* opacity: 0.8; */
 }
 
 .submit_btn {

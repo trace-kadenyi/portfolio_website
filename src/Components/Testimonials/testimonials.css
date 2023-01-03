@@ -115,12 +115,16 @@
   justify-content: center;
   align-items: center;
   margin: 30px auto 20px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: "Lato", sans-serif;
 }
 
 @media screen and (max-width: 550px) {
   .testimonials_card {
     max-width: 350px;
+  }
+
+  .testimonials_intro {
+    font-size: 1.1rem;
   }
 }

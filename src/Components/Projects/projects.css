@@ -251,6 +251,13 @@
   opacity: 1;
 }
 
+.reveal.appear:nth-child(7) {
+  animation: slideInFromRight 1s ease-in-out;
+  transition-delay: 1.70s;
+  transform: translateY(0);
+  opacity: 1;
+}
+
 .hide {
   display: none !important;
 }
