@@ -37,6 +37,17 @@
   max-width: 450px;
   display: flex;
   flex-direction: column-reverse;
+  opacity: 0.8;
+}
+
+.testimonials_card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-width: 0 64px 64px 0;
+  border-style: solid;
+  border-color: #ff3b3f #0f1626;
 }
 
 .active_content_testimonials {
