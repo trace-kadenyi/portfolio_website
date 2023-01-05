@@ -194,3 +194,9 @@ form {
   bottom: -20px;
 }
 }
+
+@media screen and (max-width: 550px) {
+  .contact_head {
+    font-size: 2rem;
+  }
+}
