@@ -124,6 +124,17 @@ const Projects = () => {
     }
   }
 
+  // link see less to start of project section on click
+  const scrollToProjects = (e) => {
+    if (e.target.innerText === "See More") {
+      document
+        .querySelector(".projects_sect")
+        .scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  window.addEventListener("click", scrollToProjects);
+
   return (
     <section className="projects_sect" id="projects">
       <div className="project_start">
