@@ -20,8 +20,9 @@
   padding-left: 20px;
 }
 
-.landing_container .span1, .span2 {
-  color: #FF3B3F;
+.landing_container .span1,
+.span2 {
+  color: #ff3b3f;
   font-size: 4vw;
   line-height: 0.6em;
   z-index: 1000;
@@ -45,10 +46,11 @@
 }
 
 .landing_container .title {
-  color: #FF3B3F;
+  color: #ff3b3f;
   line-height: 0.6em;
   z-index: 1000;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   justify-self: flex-start;
   align-self: flex-start;
   font-size: 1.5rem;
@@ -69,11 +71,10 @@
   list-style-type: none;
 }
 
-
 .landing_contact_icons ul li a img {
   width: 30px;
   height: 30px;
-  border: 1px solid #FF3B3F;
+  border: 1px solid #ff3b3f;
   border-radius: 50%;
   display: block;
   position: relative;
@@ -93,12 +94,12 @@
   transition: 0.5s;
   position: absolute;
   left: 40px;
-  color: #FF3B3F;
+  color: #ff3b3f;
   font-style: italic;
   font-size: 0.8rem;
 }
 
-.landing_contact_icons:hover  ul li:hover a span {
+.landing_contact_icons:hover ul li:hover a span {
   display: block;
   visibility: visible;
   opacity: 1;
@@ -120,10 +121,9 @@
   font-size: 30px;
   background: #0f1626;
   border: none;
-  color: #FF3B3F;
+  color: #ff3b3f;
   cursor: pointer;
 }
-
 
 /* smaller screen */
 
@@ -133,7 +133,8 @@
     top: 40%;
   }
 
-  .landing_container .span1, .span2 {
+  .landing_container .span1,
+  .span2 {
     line-height: 0.6em;
     font-weight: 900;
     font-size: 3rem;
@@ -147,5 +148,21 @@
 
   .landing_contact_icons {
     top: 50%;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .landing_container .span1,
+  .span2 {
+    line-height: 0.6em;
+    font-weight: 900;
+    font-size: 2rem;
+    letter-spacing: 0.3em;
+    font-weight: 900;
+  }
+
+  .landing_container .title {
+    font-size: 0.8rem;
+    top: 40%;
   }
 }

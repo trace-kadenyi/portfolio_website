@@ -8,7 +8,6 @@
 .contact_start {
   margin: 100px auto 30px;
   height: 100%;
-  
 }
 
 .contact_head {
@@ -32,7 +31,8 @@
   border-radius: 10px;
   display: flex;
   background: #fff;
-  background: linear-gradient(rgba(2, 8, 22, 0.7), rgba(2, 19, 59, 0.7)), url("../../Assets/Images/contact1.jpg");
+  background: linear-gradient(rgba(2, 8, 22, 0.7), rgba(2, 19, 59, 0.7)),
+    url("../../Assets/Images/contact1.jpg");
   background-size: cover;
 }
 
@@ -67,7 +67,6 @@
   text-decoration: underline;
   color: black;
 }
-
 
 .contact_touch:hover {
   color: #ff3b3f;
@@ -138,7 +137,7 @@ form {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  /* opacity: 0.8; */
+  margin-bottom: 20px;
 }
 
 .submit_btn {
@@ -164,7 +163,7 @@ form {
   }
 
   .contact_content {
-    height: 95vh;
+    height: max-content;
     flex-direction: column;
     margin-bottom: 20px;
   }
@@ -186,17 +185,23 @@ form {
   form {
     width: 60vw;
   }
-  
+
   .contact_sect_icons ul {
     position: relative;
-}
-.contact_sect_icons ul li a span  {
-  bottom: -20px;
-}
+  }
+  .contact_sect_icons ul li a span {
+    bottom: -20px;
+  }
 }
 
 @media screen and (max-width: 550px) {
   .contact_head {
     font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .contact_head {
+    font-size: 1.5rem;
   }
 }

@@ -160,3 +160,8 @@ button {
   }
 }
 
+@media screen and (max-width: 280px) {
+  .about_title {
+    font-size: 1.5rem;
+  }
+}
