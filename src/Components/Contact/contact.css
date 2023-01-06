@@ -8,7 +8,6 @@
 .contact_start {
   margin: 100px auto 30px;
   height: 100%;
-  
 }
 
 .contact_head {
@@ -32,7 +31,8 @@
   border-radius: 10px;
   display: flex;
   background: #fff;
-  background: linear-gradient(rgba(2, 8, 22, 0.7), rgba(2, 19, 59, 0.7)), url("../../Assets/Images/contact1.jpg");
+  background: linear-gradient(rgba(2, 8, 22, 0.7), rgba(2, 19, 59, 0.7)),
+    url("../../Assets/Images/contact1.jpg");
   background-size: cover;
 }
 
@@ -51,7 +51,7 @@
   justify-content: center;
   align-items: center;
   font-size: 15px;
-  /* opacity: 0.8; */
+  opacity: 0.8;
 }
 
 .feedback {
@@ -67,7 +67,6 @@
   text-decoration: underline;
   color: black;
 }
-
 
 .contact_touch:hover {
   color: #ff3b3f;
@@ -118,6 +117,7 @@
   position: absolute;
   right: 10%;
   top: 20%;
+  opacity: 0.8;
 }
 
 label {
@@ -137,7 +137,7 @@ form {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  /* opacity: 0.8; */
+  margin-bottom: 20px;
 }
 
 .submit_btn {
@@ -159,18 +159,21 @@ form {
 
 @media screen and (max-width: 768px) {
   .contact_card {
+    position: static;
+    width: 100%;
     font-size: 16px;
+    height: max-content;
+  }
+
+  .details_head {
+    margin: 20px auto;
   }
 
   .contact_content {
     height: 95vh;
+    height: max-content;
     flex-direction: column;
     margin-bottom: 20px;
-  }
-  .contact_card {
-    position: static;
-    height: max-content + 10px;
-    width: 100%;
   }
 
   .contact_form {
@@ -185,11 +188,23 @@ form {
   form {
     width: 60vw;
   }
-  
+
   .contact_sect_icons ul {
     position: relative;
+  }
+  .contact_sect_icons ul li a span {
+    bottom: -20px;
+  }
 }
-.contact_sect_icons ul li a span  {
-  bottom: -20px;
+
+@media screen and (max-width: 550px) {
+  .contact_head {
+    font-size: 2rem;
+  }
 }
+
+@media screen and (max-width: 280px) {
+  .contact_head {
+    font-size: 1.5rem;
+  }
 }

@@ -19,14 +19,8 @@ const Projects = () => {
       id: 1,
       title: "Doc Appointments",
       description:
-        "Doc Appointments is a web application that eases the process of booking doctors' appointments for patients by allowing them to book appointments online.",
-      technologies: [
-        "React",
-        "Redux",
-        "Ruby on Rails",
-        "PostgreSQL",
-        "Pair Programming",
-      ],
+        "A web application that eases the process of booking doctors' appointments for patients by allowing them to book their appointments online.",
+      technologies: ["React", "Ruby on Rails", "Postgres", "Pair Programming"],
       image: project1,
       live_link: "https://doc-appointments.netlify.app/",
       source_link:
@@ -46,7 +40,7 @@ const Projects = () => {
       id: 3,
       title: "Movie Database",
       description:
-        "Films are fetched from a public api. The user can like and comment on each film, of which the data is stored in two separate involvement apis.",
+        "Animation films are fetched from a public api. The user can like and comment on each film, of which the data is stored in two separate involvement apis.",
       technologies: ["React", "Redux", "REST API", "Pair Programming"],
       image: project8,
       live_link: "https://animation-database.netlify.app/",
@@ -87,15 +81,10 @@ const Projects = () => {
       title: "Bookstore App",
       description:
         "An app that allows the user to add and remove books. The books are saved on an API and are posted and fetched in alignment with the user's interaction.",
-      technologies: [
-        "React",
-        "Redux",
-        "API",
-      ],
+      technologies: ["React", "Redux", "API"],
       image: project7,
       live_link: "https://bookstore-webapp-2022.netlify.app/",
-      source_link:
-        "https://github.com/TracK92/Bookstore-App.git",
+      source_link: "https://github.com/TracK92/Bookstore-App.git",
     },
   ];
 
@@ -135,6 +124,17 @@ const Projects = () => {
     }
   }
 
+  // link see less to start of project section on click
+  const scrollToProjects = (e) => {
+    if (e.target.innerText === "See More") {
+      document
+        .querySelector(".projects_sect")
+        .scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  window.addEventListener("click", scrollToProjects);
+
   return (
     <section className="projects_sect" id="projects">
       <div className="project_start">
@@ -156,12 +156,14 @@ const Projects = () => {
                     <img src={project.image} alt={project.title} />
                   </div>
                   <div className="project_info">
-                    <h3 className="project_title">{project.title}</h3>
-                    <p className="project_desc">{project.description}</p>
-                    <div className="tech_span">
-                      {project.technologies.map((tech) => {
-                        return <span key={tech}>{tech}</span>;
-                      })}
+                    <div className="project_info_1">
+                      <h3 className="project_title">{project.title}</h3>
+                      <p className="project_desc">{project.description}</p>
+                      <div className="tech_span">
+                        {project.technologies.map((tech) => {
+                          return <span key={tech}>{tech}</span>;
+                        })}
+                      </div>
                     </div>
                     {/* see project */}
                     <div className="project_links">
