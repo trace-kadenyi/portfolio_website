@@ -159,18 +159,21 @@ form {
 
 @media screen and (max-width: 768px) {
   .contact_card {
+    position: static;
+    width: 100%;
     font-size: 16px;
+    height: max-content;
+  }
+
+  .details_head {
+    margin: 20px auto;
   }
 
   .contact_content {
+    height: 95vh;
     height: max-content;
     flex-direction: column;
     margin-bottom: 20px;
-  }
-  .contact_card {
-    position: static;
-    height: max-content + 10px;
-    width: 100%;
   }
 
   .contact_form {
