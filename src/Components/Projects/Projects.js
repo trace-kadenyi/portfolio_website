@@ -3,12 +3,13 @@ import { TiArrowForwardOutline } from "react-icons/ti";
 
 import "./projects.css";
 import project1 from "../../Assets/Images/doc.png";
-import project2 from "../../Assets/Images/crypto.png";
-import project3 from "../../Assets/Images/music.png";
+import project2 from "../../Assets/Images/casual_gourmet.png";
+import project5 from "../../Assets/Images/crypto.png";
+import project7 from "../../Assets/Images/music.png";
 import project4 from "../../Assets/Images/leaderboard.png";
 import project6 from "../../Assets/Images/math.png";
-import project7 from "../../Assets/Images/bookstore.png";
-import project8 from "../../Assets/Images/animation.png";
+// import project7 from "../../Assets/Images/bookstore.png";
+import project3 from "../../Assets/Images/animation.png";
 
 const Projects = () => {
   const [more, setMore] = useState(false);
@@ -28,13 +29,13 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: "Crypto Tracker",
+      title: "Casual Gourmet",
       description:
-        "An SPA that fetches the latest cryptocurrency data from an API. 100 crytocurrencies are ranked and details provided on an alternate route/page.",
+        "An application that provides users with multiple recipes for both foods and drinks. The user can search for recipes by name, main ingredient, location, etc.",
       technologies: ["React", "Redux", "API"],
       image: project2,
-      live_link: "https://papaya-sunburst-a9d343.netlify.app/",
-      source_link: "https://github.com/TracK92/crypto-metrics-webapp.git",
+      live_link: "https://casual-gourmet.vercel.app/",
+      source_link: "https://github.com/TracK92/casual_gourmet.git",
     },
     {
       id: 3,
@@ -42,7 +43,7 @@ const Projects = () => {
       description:
         "Animation films are fetched from a public api. The user can like and comment on each film, of which the data is stored in two separate involvement apis.",
       technologies: ["React", "Redux", "REST API", "Pair Programming"],
-      image: project8,
+      image: project3,
       live_link: "https://animation-database.netlify.app/",
       source_link: "https://github.com/TracK92/Movie-Database-react-redux.git",
     },
@@ -58,6 +59,16 @@ const Projects = () => {
     },
     {
       id: 5,
+      title: "Crypto Tracker",
+      description:
+        "An SPA that fetches the latest cryptocurrency data from an API. 100 crytocurrencies are ranked and details provided on an alternate route/page.",
+      technologies: ["React", "Redux", "API"],
+      image: project5,
+      live_link: "https://papaya-sunburst-a9d343.netlify.app/",
+      source_link: "https://github.com/TracK92/crypto-metrics-webapp.git",
+    },
+    {
+      id: 6,
       title: "Math Magicians",
       description:
         "A single page app of a calculator with three pages: home, calculator, and random mathematics quotes. Solve complex mathematical problems with ease.",
@@ -67,25 +78,25 @@ const Projects = () => {
       source_link: "https://github.com/TracK92/Math-Magicians.git",
     },
     {
-      id: 6,
+      id: 7,
       title: "Hidden Musical Treasures",
       description:
         "This website is a guide to unpopular music that suits different moods from happy to sad to mawkish. Pick and choose depending on how you feel.",
       technologies: ["HTML", "CSS", "Netlify"],
-      image: project3,
+      image: project7,
       live_link: "https://kind-yonath-62b539.netlify.app/",
       source_link: "https://github.com/TracK92/Hidden-Musical-Treasures.git",
     },
-    {
-      id: 7,
-      title: "Bookstore App",
-      description:
-        "An app that allows the user to add and remove books. The books are saved on an API and are posted and fetched in alignment with the user's interaction.",
-      technologies: ["React", "Redux", "API"],
-      image: project7,
-      live_link: "https://bookstore-webapp-2022.netlify.app/",
-      source_link: "https://github.com/TracK92/Bookstore-App.git",
-    },
+    // {
+    //   id: 7,
+    //   title: "Bookstore App",
+    //   description:
+    //     "An app that allows the user to add and remove books. The books are saved on an API and are posted and fetched in alignment with the user's interaction.",
+    //   technologies: ["React", "Redux", "API"],
+    //   image: project7,
+    //   live_link: "https://bookstore-webapp-2022.netlify.app/",
+    //   source_link: "https://github.com/TracK92/Bookstore-App.git",
+    // },
   ];
 
   // toggle hidden projects

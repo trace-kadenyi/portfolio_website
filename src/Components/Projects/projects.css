@@ -222,15 +222,6 @@
   }
 }
 
-@keyframes slideInFromBottom {
-  0% {
-    transform: translateY(100%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
 .reveal.appear:nth-child(1) {
   animation: slideInFromRight 1s ease-in-out;
   transition-delay: 0.5s;
@@ -271,7 +262,7 @@
 }
 
 .reveal.appear:nth-child(7) {
-  animation: slideInFromBottom 1s ease-in-out;
+  animation: slideInFromTop 1s ease-in-out;
   transform: translateY(0);
   opacity: 1;
 }

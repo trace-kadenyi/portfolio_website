@@ -49,7 +49,17 @@ const About = () => {
               <a href="mailto:treykadenyi@gmail.com" className="touch">
                 get in touch
               </a>{" "}
-              and let's chat!
+              and let's chat! <br />
+              Check out my{" "}
+              <a
+                href="https://docs.google.com/document/d/1bzoeJz-HpSqfjInOUQuz1AT2de0feeBd_JN4oA8CPNM/edit?usp=sharing"
+                target="_blank"
+                rel="noreferrer"
+                className="touch"
+              >
+                RESUME
+              </a>
+              .
             </p>
           </div>
           {/* skills section */}
@@ -80,7 +90,7 @@ const About = () => {
                 <li>Font Awesome</li>
               </ul>
 
-              <hr className="line"/>
+              <hr className="line" />
               {/* tools */}
               <h3>Tools</h3>
               <ul className="tools">
@@ -92,7 +102,7 @@ const About = () => {
                 <li>Postman</li>
               </ul>
 
-              <hr className="line"/>
+              <hr className="line" />
               {/* databases */}
               <h3>Databases</h3>
               <ul className="databases">
@@ -100,7 +110,7 @@ const About = () => {
                 <li>SQLite</li>
               </ul>
 
-              <hr className="line"/>
+              <hr className="line" />
               {/* other */}
               <h3>Supplementary Skills</h3>
               <ul className="other">
@@ -110,7 +120,7 @@ const About = () => {
                 <li>Jest</li>
                 <li>RSpec</li>
               </ul>
-              <hr className="line"/>
+              <hr className="line" />
               {/* soft skills */}
               <h3>Soft Skills</h3>
               <ul className="soft_skills">
