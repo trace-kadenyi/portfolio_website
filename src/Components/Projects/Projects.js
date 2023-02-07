@@ -27,10 +27,10 @@ const Projects = () => {
       source_link:
         "https://github.com/TracK92/doctor-appointment-front-end.git",
     },
-      {
+    {
       id: 2,
       title: "Casual Gourmet",
-        description:
+      description:
         "An application that provides users with multiple recipes for both foods and drinks. The user can search for recipes by name, main ingredient, location, etc.",
       technologies: ["React", "Redux", "API"],
       image: project2,
@@ -57,7 +57,7 @@ const Projects = () => {
       live_link: "https://playful-dragon-df58b2.netlify.app/",
       source_link: "https://github.com/TracK92/Leaderboard.git",
     },
-       {
+    {
       id: 5,
       title: "Crypto Tracker",
       description:
