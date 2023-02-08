@@ -88,6 +88,7 @@ const About = () => {
                 <li>Bootstrap</li>
                 <li>Material UI</li>
                 <li>Font Awesome</li>
+                <li>Express</li>
               </ul>
 
               <hr className="line" />
@@ -108,6 +109,7 @@ const About = () => {
               <ul className="databases">
                 <li>PostgreSQL</li>
                 <li>SQLite</li>
+                <li>Firebase</li>
               </ul>
 
               <hr className="line" />
