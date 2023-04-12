@@ -45,7 +45,8 @@ const Projects = () => {
       technologies: ["React", "Redux", "REST API", "Pair Programming"],
       image: project3,
       live_link: "https://animation-database.netlify.app/",
-      source_link: "https://github.com/trace-kadenyi/Movie-Database-react-redux.git",
+      source_link:
+        "https://github.com/trace-kadenyi/Movie-Database-react-redux.git",
     },
     {
       id: 4,
@@ -85,7 +86,8 @@ const Projects = () => {
       technologies: ["HTML", "CSS", "Netlify"],
       image: project7,
       live_link: "https://kind-yonath-62b539.netlify.app/",
-      source_link: "https://github.com/trace-kadenyi/Hidden-Musical-Treasures.git",
+      source_link:
+        "https://github.com/trace-kadenyi/Hidden-Musical-Treasures.git",
     },
     // {
     //   id: 7,
