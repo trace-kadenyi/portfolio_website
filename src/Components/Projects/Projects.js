@@ -4,7 +4,7 @@ import { TiArrowForwardOutline } from "react-icons/ti";
 import "./projects.css";
 import project1 from "../../Assets/Images/doc.png";
 import project2 from "../../Assets/Images/casual_gourmet.png";
-import project5 from "../../Assets/Images/crypto.png";
+// import project5 from "../../Assets/Images/crypto.png";
 import project7 from "../../Assets/Images/music.png";
 import project4 from "../../Assets/Images/leaderboard.png";
 import project6 from "../../Assets/Images/math.png";
@@ -18,6 +18,16 @@ const Projects = () => {
   const projectsContainer = [
     {
       id: 1,
+      title: "Casual Gourmet",
+      description:
+        "An application that provides users with multiple recipes for both foods and drinks. The user can search for recipes by name, main ingredient, location, etc.",
+      technologies: ["React", "Redux", "API"],
+      image: project2,
+      live_link: "https://casual-gourmet.vercel.app/",
+      source_link: "https://github.com/trace-kadenyi/casual_gourmet.git",
+    },
+    {
+      id: 2,
       title: "Doc Appointments",
       description:
         "A web application that eases the process of booking doctors' appointments for patients by allowing them to book their appointments online.",
@@ -25,17 +35,7 @@ const Projects = () => {
       image: project1,
       live_link: "https://doc-appointments.netlify.app/",
       source_link:
-        "https://github.com/TracK92/doctor-appointment-front-end.git",
-    },
-    {
-      id: 2,
-      title: "Casual Gourmet",
-      description:
-        "An application that provides users with multiple recipes for both foods and drinks. The user can search for recipes by name, main ingredient, location, etc.",
-      technologies: ["React", "Redux", "API"],
-      image: project2,
-      live_link: "https://casual-gourmet.vercel.app/",
-      source_link: "https://github.com/TracK92/casual_gourmet.git",
+        "https://github.com/trace-kadenyi/doctor-appointment-front-end.git",
     },
     {
       id: 3,
@@ -45,7 +45,8 @@ const Projects = () => {
       technologies: ["React", "Redux", "REST API", "Pair Programming"],
       image: project3,
       live_link: "https://animation-database.netlify.app/",
-      source_link: "https://github.com/TracK92/Movie-Database-react-redux.git",
+      source_link:
+        "https://github.com/trace-kadenyi/Movie-Database-react-redux.git",
     },
     {
       id: 4,
@@ -55,37 +56,38 @@ const Projects = () => {
       technologies: ["Webpack", "React", "REST API"],
       image: project4,
       live_link: "https://playful-dragon-df58b2.netlify.app/",
-      source_link: "https://github.com/TracK92/Leaderboard.git",
+      source_link: "https://github.com/trace-kadenyi/Leaderboard.git",
     },
+    // {
+    //   id: 5,
+    //   title: "Crypto Tracker",
+    //   description:
+    //     "An SPA that fetches the latest cryptocurrency data from an API. 100 crytocurrencies are ranked and details provided on an alternate route/page.",
+    //   technologies: ["React", "Redux", "API"],
+    //   image: project5,
+    //   live_link: "https://papaya-sunburst-a9d343.netlify.app/",
+    //   source_link: "https://github.com/TracK92/crypto-metrics-webapp.git",
+    // },
     {
       id: 5,
-      title: "Crypto Tracker",
-      description:
-        "An SPA that fetches the latest cryptocurrency data from an API. 100 crytocurrencies are ranked and details provided on an alternate route/page.",
-      technologies: ["React", "Redux", "API"],
-      image: project5,
-      live_link: "https://papaya-sunburst-a9d343.netlify.app/",
-      source_link: "https://github.com/TracK92/crypto-metrics-webapp.git",
-    },
-    {
-      id: 6,
       title: "Math Magicians",
       description:
         "A single page app of a calculator with three pages: home, calculator, and random mathematics quotes. Solve complex mathematical problems with ease.",
       technologies: ["React", "Single-Page Application", "Pair Programming"],
       image: project6,
       live_link: "https://math-magicks.netlify.app/",
-      source_link: "https://github.com/TracK92/Math-Magicians.git",
+      source_link: "https://github.com/trace-kadenyi/Math-Magicians.git",
     },
     {
-      id: 7,
+      id: 6,
       title: "Hidden Musical Treasures",
       description:
         "This website is a guide to unpopular music that suits different moods from happy to sad to mawkish. Pick and choose depending on how you feel.",
       technologies: ["HTML", "CSS", "Netlify"],
       image: project7,
       live_link: "https://kind-yonath-62b539.netlify.app/",
-      source_link: "https://github.com/TracK92/Hidden-Musical-Treasures.git",
+      source_link:
+        "https://github.com/trace-kadenyi/Hidden-Musical-Treasures.git",
     },
     // {
     //   id: 7,

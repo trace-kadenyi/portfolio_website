@@ -84,7 +84,7 @@ const Contact = () => {
                 {/* github */}
                 <li>
                   <a
-                    href="https://github.com/TracK92"
+                    href="https://github.com/trace-kadenyi"
                     target="_blank"
                     rel="noreferrer"
                   >
