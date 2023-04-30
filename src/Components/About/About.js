@@ -36,12 +36,11 @@ const About = () => {
             <img src={myPic} alt="my_pic" className="hero" />
             <p className="content_para">
               Hello there! <br />
-              I'm Tracey, a full-stack web developer based in Nairobi, Kenya.{" "}
-              <br />
-              My primary skills are React/Redux and Ruby on Rails. <br />I love
-              the ability that programming gives me to create anything that I
-              can imagine, just like <span className="magic">MAGIC</span>.{" "}
-              <br />
+              I'm Tracey, a full-stack web developer. <br />
+              My primary skills are React/Redux and Node.js (MERN stack). <br />
+              I love the ability that programming gives me to create anything
+              that I can imagine, just like <span className="magic">MAGIC</span>
+              . <br />
               I embrace challenges because solving them is so much fun. <br />
               I am also a lifelong learner with a passion for technology, books,
               food, dogs and people. <br />
@@ -75,6 +74,7 @@ const About = () => {
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
+                <li>Python</li>
                 <li>Ruby</li>
               </ul>
 
@@ -84,11 +84,12 @@ const About = () => {
               <ul className="frameworks">
                 <li>React</li>
                 <li>Redux</li>
+                <li>Express</li>
+                <li>Node.js</li>
                 <li>Ruby on Rails</li>
                 <li>Bootstrap</li>
                 <li>Material UI</li>
                 <li>Font Awesome</li>
-                <li>Express</li>
               </ul>
 
               <hr className="line" />
@@ -98,6 +99,7 @@ const About = () => {
                 <li>Git</li>
                 <li>GitHub</li>
                 <li>Heroku</li>
+                <li>Vercel</li>
                 <li>Netlify</li>
                 <li>VS Code</li>
                 <li>Postman</li>
@@ -107,8 +109,8 @@ const About = () => {
               {/* databases */}
               <h3>Databases</h3>
               <ul className="databases">
+                <li>MongoDB</li>
                 <li>PostgreSQL</li>
-                <li>SQLite</li>
                 <li>Firebase</li>
               </ul>
 
