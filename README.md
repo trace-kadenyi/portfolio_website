@@ -18,5 +18,5 @@
 
 👤 **Tracey Kadenyi**
 
-- GitHub: [@TracK92](https://github.com/trace-kadenyi)
+- GitHub: [@Trace-kadenyi](https://github.com/trace-kadenyi)
 - LinkedIn: [Tracey Kadenyi](https://www.linkedin.com/in/tracey-kadenyi/)
