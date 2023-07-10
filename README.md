@@ -11,12 +11,12 @@
 
 ## Live Demo
 
-[Live Demo Link](https://tracey-kadenyi.netlify.app/)
+[Live Demo Link](https://tracey-kadenyi.vercel.app/)
 
 
 ## Authors
 
 👤 **Tracey Kadenyi**
 
-- GitHub: [@TracK92](https://github.com/TracK92)
+- GitHub: [@TracK92](https://github.com/trace-kadenyi)
 - LinkedIn: [Tracey Kadenyi](https://www.linkedin.com/in/tracey-kadenyi/)
