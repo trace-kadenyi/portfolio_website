@@ -27,7 +27,7 @@ const Projects = () => {
       id: 2,
       title: "Imagine (In Progress)",
       description:
-        "An interactive application for creatives (readers and writers). Users can publish their own stories and/read stories published by others users.",
+        "An interactive application for creatives (readers and writers). Users can publish their own original stories and/or read stories published by other users.",
       technologies: ["MongoDB", "Express", "React", "Node"],
       image: imagine,
       live_link: "https://imagine-tellmeastory.vercel.app/",
