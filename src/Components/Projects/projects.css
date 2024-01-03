@@ -318,6 +318,9 @@
 }
 
 @media screen and (max-width: 550px) {
+  .card {
+    height: 350px;
+  }
   .projects_head {
     font-size: 2rem;
   }
@@ -325,15 +328,11 @@
 
 @media screen and (max-width: 360px) {
   .card {
-    height: 350px;
+    height: 500px;
   }
 }
 
 @media screen and (max-width: 280px) {
-  .card {
-    height: 450px;
-  }
-
   .projects_head {
     font-size: 1.5rem;
   }

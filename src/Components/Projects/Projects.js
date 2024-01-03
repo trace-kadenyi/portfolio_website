@@ -15,6 +15,16 @@ const Projects = () => {
   const projectsContainer = [
     {
       id: 1,
+      title: "Imagine (In Progress)",
+      description:
+        "An interactive application for creatives (readers and writers). Users can publish their own original stories and/or read stories published by other users.",
+      technologies: ["MongoDB", "Expressjs", "Reactjs", "Nodejs"],
+      image: imagine,
+      live_link: "https://imagine-tellmeastory.vercel.app/",
+      source_link: "https://github.com/trace-kadenyi/storybrooke-frontend",
+    },
+    {
+      id: 2,
       title: "Casual Gourmet",
       description:
         "An application that provides users with multiple recipes for both foods and drinks. The user can search for recipes by name, main ingredient, location, etc.",
@@ -22,16 +32,6 @@ const Projects = () => {
       image: casual_gourmet,
       live_link: "https://casual-gourmet.vercel.app/",
       source_link: "https://github.com/trace-kadenyi/casual_gourmet.git",
-    },
-    {
-      id: 2,
-      title: "Imagine (In Progress)",
-      description:
-        "An interactive application for creatives (readers and writers). Users can publish their own original stories and/or read stories published by other users.",
-      technologies: ["MongoDB", "Express", "React", "Node"],
-      image: imagine,
-      live_link: "https://imagine-tellmeastory.vercel.app/",
-      source_link: "https://github.com/trace-kadenyi/storybrooke-frontend",
     },
     {
       id: 3,
