@@ -30,7 +30,7 @@ const Contact = () => {
       feedback.style.color = "red";
     } else {
       feedback.textContent = "Message sent successfully!";
-      feedback.style.color = "green";
+      feedback.style.color = "#ff3b3f";
 
       setName("");
       setEmail("");
