@@ -50,7 +50,7 @@ const Testimonials = () => {
             className={active === 5 ? "tabs active_tabs" : "tabs"}
             onClick={() => handleTabs(5)}
           ></button>
-          <button
+          {/* <button
             className={active === 6 ? "tabs active_tabs" : "tabs"}
             onClick={() => handleTabs(6)}
           ></button>
@@ -61,7 +61,7 @@ const Testimonials = () => {
           <button
             className={active === 8 ? "tabs active_tabs" : "tabs"}
             onClick={() => handleTabs(8)}
-          ></button>
+          ></button> */}
         </div>
 
         <div className="testimonials_container">
@@ -138,7 +138,7 @@ const Testimonials = () => {
           {/* end */}
 
           {/* third testimonial */}
-          <div
+          {/* <div
             className={active === 3 ? "active_content_testimonials" : "content"}
           >
             <div className="testimonials_card">
@@ -166,12 +166,12 @@ const Testimonials = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           {/* end */}
 
           {/* fourth testimonial */}
           <div
-            className={active === 4 ? "active_content_testimonials" : "content"}
+            className={active === 3 ? "active_content_testimonials" : "content"}
           >
             <div className="testimonials_card">
               <div className="testimonials_content">
@@ -210,7 +210,7 @@ const Testimonials = () => {
           {/* end */}
 
           {/* fifth testimonial */}
-          <div
+          {/* <div
             className={active === 5 ? "active_content_testimonials" : "content"}
           >
             <div className="testimonials_card">
@@ -238,12 +238,12 @@ const Testimonials = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           {/* end */}
 
           {/* sixth testimonial */}
           <div
-            className={active === 6 ? "active_content_testimonials" : "content"}
+            className={active === 4 ? "active_content_testimonials" : "content"}
           >
             <div className="testimonials_card">
               <div className="testimonials_content">
@@ -277,7 +277,7 @@ const Testimonials = () => {
           {/* end */}
 
           {/* eighth testimonial */}
-          <div
+          {/* <div
             className={active === 7 ? "active_content_testimonials" : "content"}
           >
             <div className="testimonials_card">
@@ -313,11 +313,11 @@ const Testimonials = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           {/* end */}
           {/* seventh testimonial */}
           <div
-            className={active === 8 ? "active_content_testimonials" : "content"}
+            className={active === 5 ? "active_content_testimonials" : "content"}
           >
             <div className="testimonials_card">
               <div className="testimonials_content">
