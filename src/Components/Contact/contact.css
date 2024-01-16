@@ -208,3 +208,9 @@ form {
     font-size: 1.5rem;
   }
 }
+
+@media screen and (max-height: 590px) {
+  .contact_content {
+    height: 100vh;
+  }
+}
