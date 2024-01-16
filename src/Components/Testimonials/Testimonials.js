@@ -4,12 +4,12 @@ import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 import "./testimonials.css";
 import charles from "../../Assets/Images/testimonials/charles.png";
 import mohamed from "../../Assets/Images/testimonials/aachour.png";
-import tushar from "../../Assets/Images/testimonials/tushar.png";
+// import tushar from "../../Assets/Images/testimonials/tushar.png";
 import clifford from "../../Assets/Images/testimonials/clifford.png";
-import alex from "../../Assets/Images/testimonials/alex.png";
+// import alex from "../../Assets/Images/testimonials/alex.png";
 import eyasu from "../../Assets/Images/testimonials/eyasu.png";
 import tarek from "../../Assets/Images/testimonials/tarek.png";
-import priscilla from "../../Assets/Images/testimonials/priscilla.png";
+// import priscilla from "../../Assets/Images/testimonials/priscilla.png";
 
 const Testimonials = () => {
   const [active, setActive] = useState(1);
