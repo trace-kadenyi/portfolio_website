@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 
 import "./about.css";
-import myPic from "../../Assets/Images/my_pic.png";
+// import myPic from "../../Assets/Images/my_pic.png";
+import myPic from "../../Assets/Images/profile_image.png";
 import skills from "../../Assets/Images/skills1.gif";
 
 const About = () => {
@@ -33,40 +34,43 @@ const About = () => {
           {/* about me intro */}
           <div className={active === 1 ? "active_content" : "content"}>
             <h1 className="about_title">About Me</h1>
-            <img src={myPic} alt="my_pic" className="hero" />
-            <p className="content_para">
-              Hello there! <br />
-              I'm Tracey, a full-stack web developer. <br />
-              My primary skills are React/Redux and Node.js (MERN stack). <br />
-              I love the ability that programming gives me to create anything
-              that I can imagine, just like <span className="magic">MAGIC</span>
-              . <br />
-              I embrace challenges because solving them is so much fun. <br />
-              I am also a lifelong learner with a passion for technology, books,
-              food, dogs and people. <br />
-              If you have a tech idea that you want to actualize,{" "}
-              <a href="mailto:treykadenyi@gmail.com" className="touch">
-                get in touch
-              </a>{" "}
-              and let's chat! <br />
-              Check out my{" "}
-              <a
-                href="https://docs.google.com/document/d/1bzoeJz-HpSqfjInOUQuz1AT2de0feeBd_JN4oA8CPNM/edit?usp=sharing"
-                target="_blank"
-                rel="noreferrer"
-                className="touch"
-              >
-                RESUME
-              </a>
-              .
-            </p>
+            <div className="content_one_div">
+              <img src={myPic} alt="my_pic" className="hero" />
+              <p className="content_para">
+                Hello there! <br />
+                I'm Tracey, a full-stack web developer. <br />
+                My primary skills are React/Redux and Node.js (MERN stack).{" "}
+                <br />I love the ability that programming gives me to create
+                anything that I can imagine, just like{" "}
+                <span className="magic">MAGIC</span>
+                . <br />
+                I embrace challenges because solving them is so much fun. <br />
+                I am also a lifelong learner with a passion for technology,
+                books, food, dogs and people. <br />
+                If you have a tech idea that you want to actualize,{" "}
+                <a href="mailto:treykadenyi@gmail.com" className="touch">
+                  get in touch
+                </a>{" "}
+                and let's chat! <br />
+                Check out my{" "}
+                <a
+                  href="https://docs.google.com/document/d/1bzoeJz-HpSqfjInOUQuz1AT2de0feeBd_JN4oA8CPNM/edit?usp=sharing"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="touch"
+                >
+                  RESUME
+                </a>
+                .
+              </p>
+            </div>
           </div>
           {/* skills section */}
           <div
             className={active === 2 ? "active_content active_two" : "content"}
           >
             <h1 className="about_title">Skills</h1>
-            <img src={skills} alt="skills" className="hero skill_hero" />
+            <img src={skills} alt="skills" className="skill_hero" />
             <div className="content_para skills">
               {/* languages */}
               <h3>Languages</h3>
@@ -103,6 +107,7 @@ const About = () => {
                 <li>Netlify</li>
                 <li>VS Code</li>
                 <li>Postman</li>
+                <li>WordPress</li>
               </ul>
 
               <hr className="line" />

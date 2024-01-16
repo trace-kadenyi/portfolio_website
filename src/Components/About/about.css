@@ -1,7 +1,7 @@
 .about_sect {
   position: relative;
   overflow: hidden;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   background: #0f1626;
   display: flex;
   flex-direction: column;
@@ -21,6 +21,11 @@ ul {
   left: 50%;
   margin-top: 100px;
   margin-bottom: 20px;
+}
+
+.skill_hero {
+  max-width: 400px;
+  width: 100%;
 }
 
 .content_para {
@@ -81,10 +86,14 @@ button {
 }
 
 .hero {
-  height: 250px;
   float: left;
-  rotate: 355deg;
-  margin: 20px;
+  margin-left: 20px;
+  width: 200px;
+}
+
+.skill_hero {
+  float: left;
+  width: 300px;
 }
 
 /* skills section */
@@ -145,13 +154,16 @@ button {
     flex-direction: column;
   }
 
-  .hero {
-    max-width: 250px;
-    margin-top: 0;
-  }
-
   .skill_hero {
-    max-width: 400px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .content_one_div {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
   }
 }
 
