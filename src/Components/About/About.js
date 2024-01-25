@@ -38,8 +38,10 @@ const About = () => {
               <img src={myPic} alt="my_pic" className="hero" />
               <p className="content_para">
                 Hello there! <br />
-                I'm Tracey, a full-stack web developer. <br />
-                My primary skills are React/Redux and Node.js (MERN stack).{" "}
+                I'm Tracey, a full-stack web developer. <br />I am in love with
+                all things <span className="magic">JavaScript</span> and can
+                adapt to any associated frameworks with ease. <br />
+                My primary stack is MERN (MongoDB, Express, React, Node.js).
                 <br />I love the ability that programming gives me to create
                 anything that I can imagine, just like{" "}
                 <span className="magic">MAGIC</span>
@@ -156,7 +158,7 @@ const About = () => {
                 development by accident and, well, how could I resist? Software
                 development presented me with the perfect outlet for my creative
                 side. I enjoy the thrill and challenge of designing and creating
-                complex applications that solve real-world problems.
+                applications that solve real-world problems.
               </p>
               <p className="content_para background_para">
                 I had been a self-taught developer for 1 year when I joined{" "}
@@ -179,11 +181,36 @@ const About = () => {
               </p>
 
               <p className="content_para background_para">
+                Following my studies, I participated in multiple volunteer and
+                internship programmes (
+                <a
+                  href="https://www.linkedin.com/in/tracey-kadenyi/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="touch"
+                >
+                  LinkedIn
+                </a>
+                ). I also spend a lot of my time building personal projects to
+                learn new skills and enhance my current knowledge/skills. Check
+                out my{" "}
+                <a
+                  href="https://github.com/trace-kadenyi"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="touch"
+                >
+                  GitHub page
+                </a>
+                .
+              </p>
+
+              <p className="content_para background_para">
                 Presently, I am interested in pursuing a career as a remote
-                full-stack web developer. Over the past several months, I have
-                grown to appreciate the power of technology to transform the
-                world. It is my goal to play a part in this by solving
-                real-world problems and challenges one application at a time.
+                full-stack web developer. I have grown to appreciate the power
+                of technology to transform the world. It is my goal to play a
+                part in this by solving real-world problems and challenges one
+                application at a time.
               </p>
             </div>
           </div>

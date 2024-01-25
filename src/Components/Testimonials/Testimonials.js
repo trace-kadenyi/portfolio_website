@@ -23,7 +23,7 @@ const Testimonials = () => {
       <div className="testimonials_start">
         <h1 className="testimonials_head">Testimonials</h1>
         <p className="testimonials_intro">
-          During the past year, I have worked on multiple projects with several
+          I have worked on multiple projects with several
           programmers from different countries through pair-programming. Here
           are some of their recommendations...
         </p>
