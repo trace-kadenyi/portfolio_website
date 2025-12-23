@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { TiArrowForwardOutline } from "react-icons/ti";
+import { useEffect } from "react";
 
 import "./projects.css";
 import casual_gourmet from "../../Assets/Images/casual_gourmet.png";
@@ -7,7 +6,7 @@ import imagine from "../../Assets/Images/imagine.png";
 import metriq from "../../Assets/Images/metriq_app.png";
 
 const Projects = () => {
-  const [more, setMore] = useState(false);
+  // const [more, setMore] = useState(false);
 
   // create an array of all the projects
   const projectsContainer = [
@@ -44,24 +43,26 @@ const Projects = () => {
   ];
 
   // toggle hidden projects
-  const toggleHiddenProjects = (e) => {
-    setMore(!more);
-    e.target.innerText = more ? "See More" : "See Less";
-    // rotate arrow
-    const arrow = document.querySelector(".more_btn");
-    if (e.target.innerText === "See Less") {
-      arrow.style.rotate = "270deg";
-    } else if (e.target.innerText === "See More") {
-      arrow.style.rotate = "90deg";
-    }
-    const hiddenProjects = document.querySelectorAll(".hidden_project");
-    hiddenProjects.forEach((project) => {
-      project.classList.toggle("hide");
-    });
-  };
+  // const toggleHiddenProjects = (e) => {
+  //   setMore(!more);
+  //   e.target.innerText = more ? "See More" : "See Less";
+  //   // rotate arrow
+  //   const arrow = document.querySelector(".more_btn");
+  //   if (e.target.innerText === "See Less") {
+  //     arrow.style.rotate = "270deg";
+  //   } else if (e.target.innerText === "See More") {
+  //     arrow.style.rotate = "90deg";
+  //   }
+  //   const hiddenProjects = document.querySelectorAll(".hidden_project");
+  //   hiddenProjects.forEach((project) => {
+  //     project.classList.toggle("hide");
+  //   });
+  // };
 
-  // appear when in view
-  window.addEventListener("scroll", reveal);
+  useEffect(() => {
+    window.addEventListener("scroll", reveal);
+    return () => window.removeEventListener("scroll", reveal);
+  }, []);
 
   function reveal() {
     const reveals = document.querySelectorAll(".reveal");
