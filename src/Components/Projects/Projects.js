@@ -4,7 +4,7 @@ import { TiArrowForwardOutline } from "react-icons/ti";
 import "./projects.css";
 import casual_gourmet from "../../Assets/Images/casual_gourmet.png";
 import imagine from "../../Assets/Images/imagine.png";
-import metriq from "../../Assets/Images/MetriQ.png";
+import metriq from "../../Assets/Images/metriq.png";
 
 const Projects = () => {
   const [more, setMore] = useState(false);
