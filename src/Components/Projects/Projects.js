@@ -3,9 +3,6 @@ import { TiArrowForwardOutline } from "react-icons/ti";
 
 import "./projects.css";
 import casual_gourmet from "../../Assets/Images/casual_gourmet.png";
-import musical_treasures from "../../Assets/Images/music.png";
-import leaderboard from "../../Assets/Images/leaderboard.png";
-import moviedb from "../../Assets/Images/animation.png";
 import imagine from "../../Assets/Images/imagine.png";
 import metriq from "../../Assets/Images/MetriQ.png";
 
@@ -44,38 +41,6 @@ const Projects = () => {
       live_link: "https://casual-gourmet.vercel.app/",
       source_link: "https://github.com/trace-kadenyi/casual_gourmet.git",
     },
-    // {
-    //   id: 4,
-    //   title: "Movie Database",
-    //   description:
-    //     "Animation films are fetched from a public api. The user can like and comment on each film, of which the data is stored in two separate involvement apis.",
-    //   technologies: ["React", "Redux", "REST API", "Pair Programming"],
-    //   image: moviedb,
-    //   live_link: "https://animation-database.netlify.app/",
-    //   source_link:
-    //     "https://github.com/trace-kadenyi/Movie-Database-react-redux.git",
-    // },
-    // {
-    //   id: 5,
-    //   title: "Leaderboard",
-    //   description:
-    //     "An app that records the scores of various players. The data is posted on the api through a form and fetched when the player's list is refreshed.",
-    //   technologies: ["Webpack", "React", "REST API"],
-    //   image: leaderboard,
-    //   live_link: "https://playful-dragon-df58b2.netlify.app/",
-    //   source_link: "https://github.com/trace-kadenyi/Leaderboard.git",
-    // },
-    // {
-    //   id: 6,
-    //   title: "Hidden Musical Treasures",
-    //   description:
-    //     "This website is a guide to unpopular music that suits different moods from happy to sad to mawkish. Pick and choose depending on how you feel.",
-    //   technologies: ["HTML", "CSS", "Netlify"],
-    //   image: musical_treasures,
-    //   live_link: "https://kind-yonath-62b539.netlify.app/",
-    //   source_link:
-    //     "https://github.com/trace-kadenyi/Hidden-Musical-Treasures.git",
-    // },
   ];
 
   // toggle hidden projects
@@ -115,15 +80,15 @@ const Projects = () => {
   }
 
   // link see less to start of project section on click
-  const scrollToProjects = (e) => {
-    if (e.target.innerText === "See More") {
-      document
-        .querySelector(".projects_sect")
-        .scrollIntoView({ behavior: "smooth" });
-    }
-  };
+  // const scrollToProjects = (e) => {
+  //   if (e.target.innerText === "See More") {
+  //     document
+  //       .querySelector(".projects_sect")
+  //       .scrollIntoView({ behavior: "smooth" });
+  //   }
+  // };
 
-  window.addEventListener("click", scrollToProjects);
+  // window.addEventListener("click", scrollToProjects);
 
   return (
     <section className="projects_sect" id="projects">
