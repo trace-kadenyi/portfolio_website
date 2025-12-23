@@ -59,6 +59,7 @@ const About = () => {
                   href="https://docs.google.com/document/d/1bzoeJz-HpSqfjInOUQuz1AT2de0feeBd_JN4oA8CPNM/edit?usp=sharing"
                   target="_blank"
                   className="touch"
+                  rel="noreferrer"
                 >
                   RESUME
                 </a>
@@ -164,6 +165,7 @@ const About = () => {
                 <a
                   href="https://www.microverse.org/"
                   target="_blank"
+                  rel="noreferrer"
                   className="microverse"
                 >
                   Microverse
@@ -184,6 +186,7 @@ const About = () => {
                 <a
                   href="https://www.linkedin.com/in/tracey-kadenyi/"
                   target="_blank"
+                  rel="noreferrer"
                   className="touch"
                 >
                   LinkedIn
@@ -194,6 +197,7 @@ const About = () => {
                 <a
                   href="https://github.com/trace-kadenyi"
                   target="_blank"
+                  rel="noreferrer"
                   className="touch"
                 >
                   GitHub page
