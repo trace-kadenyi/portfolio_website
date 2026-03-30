@@ -7,6 +7,7 @@ import twitter from "../../Assets/Images/contact_icons/twitter.png";
 import linkedin from "../../Assets/Images/contact_icons/linkedin.png";
 import github from "../../Assets/Images/contact_icons/github.png";
 import medium from "../../Assets/Images/contact_icons/medium.png";
+import mail from "../../Assets/Images/contact_icons/mail-icon.png";
 
 // Define interface for form data
 interface FormData {
@@ -21,6 +22,7 @@ interface SocialLink {
   img: string;
   alt: string;
   label: string;
+  isEmail?: boolean;
 }
 
 // Define type for feedback message
@@ -154,6 +156,13 @@ const Contact = () => {
       label: "GitHub",
     },
     {
+      href: "mailto:treykadenyi@gmail.com",
+      img: mail,
+      alt: "mail",
+      label: "Email",
+      isEmail: true,
+    },
+    {
       href: "https://twitter.com/traci_k7",
       img: twitter,
       alt: "twitter",
@@ -196,7 +205,12 @@ const Contact = () => {
               <ul>
                 {socialLinks.map((link) => (
                   <li key={link.label}>
-                    <a href={link.href} target="_blank" rel="noreferrer">
+                    <a
+                      href={link.href}
+                      target={link.isEmail ? undefined : "_blank"}
+                      rel={link.isEmail ? undefined : "noreferrer"}
+                      className={link.isEmail ? "email-link" : ""}
+                    >
                       <img src={link.img} alt={link.alt} />
                       <span>{link.label}</span>
                     </a>
