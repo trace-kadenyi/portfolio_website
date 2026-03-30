@@ -165,8 +165,8 @@ const Contact = () => {
     {
       href: "https://twitter.com/traci_k7",
       img: twitter,
-      alt: "twitter",
-      label: "Twitter",
+      alt: "X",
+      label: "X",
     },
     {
       href: "https://medium.com/@tracekadenyi",
