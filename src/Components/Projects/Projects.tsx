@@ -5,9 +5,19 @@ import casual_gourmet from "../../Assets/Images/casual_gourmet.png";
 import imagine from "../../Assets/Images/imagine.png";
 import metriq from "../../Assets/Images/metriq_app.png";
 
+interface Project {
+  id: number;
+  title: string;
+  description: string;
+  technologies: string[];
+  image: string;
+  live_link: string;
+  source_link: string;
+}
+
 const Projects = () => {
   // create an array of all the projects
-  const projectsContainer = [
+  const projectsContainer: Project[] = [
     {
       id: 1,
       title: "MetriQ",
@@ -40,27 +50,27 @@ const Projects = () => {
     },
   ];
 
-
   useEffect(() => {
     window.addEventListener("scroll", reveal);
     return () => window.removeEventListener("scroll", reveal);
   }, []);
 
-  function reveal() {
+  const reveal = (): void => {
     const reveals = document.querySelectorAll(".reveal");
 
-    for (let i = 0; i < reveals.length; i++) {
+    // Use forEach instead of for loop for cleaner code
+    reveals.forEach((revealElement) => {
       const windowHeight = window.innerHeight;
-      const revealTop = reveals[i].getBoundingClientRect().top;
+      const revealTop = revealElement.getBoundingClientRect().top;
       const revealPoint = 50;
 
       if (revealTop < windowHeight - revealPoint) {
-        reveals[i].classList.add("appear");
+        revealElement.classList.add("appear");
       } else {
-        reveals[i].classList.remove("appear");
+        revealElement.classList.remove("appear");
       }
-    }
-  }
+    });
+  };
 
   return (
     <section className="projects_sect" id="projects">
@@ -68,7 +78,7 @@ const Projects = () => {
         <h2 className="projects_head">Projects</h2>
         <div className="projects">
           {/* single project */}
-          {projectsContainer.map((project) => {
+          {projectsContainer.map((project: Project) => {
             return (
               <div
                 className={
@@ -100,10 +110,10 @@ const Projects = () => {
                         target="_blank"
                         rel="noreferrer"
                       >
-                        <span id={project.id} className="link_span">
+                        <span id={project.id.toString()} className="link_span">
                           Source
                         </span>
-                        <span id={project.id} className="link_span">
+                        <span id={project.id.toString()} className="link_span">
                           Source
                         </span>
                       </a>
@@ -113,10 +123,10 @@ const Projects = () => {
                         target="_blank"
                         rel="noreferrer"
                       >
-                        <span id={project.id} className="link_span">
+                        <span id={project.id.toString()} className="link_span">
                           Live
                         </span>
-                        <span id={project.id} className="link_span">
+                        <span id={project.id.toString()} className="link_span">
                           Live
                         </span>
                       </a>
