@@ -38,23 +38,32 @@ const About = () => {
             <div className="content_one_div">
               <img src={myPic} alt="my_pic" className="hero" />
               <p className="content_para">
-                Hello there! <br />
-                I'm Tracey, a full-stack web developer. <br />I am in love with
-                all things <span className="magic">JavaScript</span> and can
-                adapt to any associated frameworks with ease. <br />
-                My primary stack is MERN (MongoDB, Express, React, Node.js).
-                <br />I love the ability that programming gives me to create
-                anything that I can imagine, just like{" "}
-                <span className="magic">MAGIC</span>
-                . <br />
-                I embrace challenges because solving them is so much fun. <br />
-                I am also a lifelong learner with a passion for technology,
-                books, food, dogs and people. <br />
-                If you have a tech idea that you want to actualize,{" "}
-                <a href="mailto:treykadenyi@gmail.com" className="touch">
-                  get in touch
-                </a>{" "}
-                and let's chat! <br />
+                I'm Tracey, a full-stack JavaScript/TypeScript engineer with{" "}
+                <span className="magic">4+ years</span> of experience building
+                SaaS platforms and scalable web applications in remote and
+                cross-functional environments.
+                <br />I specialize in the MERN stack with strong expertise in{" "}
+                <span className="magic">
+                  multi-tenant architecture, RBAC, and RESTful API design
+                </span>
+                .
+                <br />
+                Most recently, I built{" "}
+                <a
+                  href="https://planit-hq.vercel.app/"
+                  target="_blank"
+                  className="touch"
+                  rel="noreferrer"
+                >
+                  PlaniT
+                </a>
+                , a B2B SaaS platform that securely isolates data across
+                organizations while enabling team collaboration.
+                <br />
+                I approach development with a focus on clean architecture,
+                maintainability, and shipping code that solves real business
+                problems.
+                <br />
                 Check out my{" "}
                 <a
                   href="https://docs.google.com/document/d/1bzoeJz-HpSqfjInOUQuz1AT2de0feeBd_JN4oA8CPNM/edit?usp=sharing"
@@ -62,9 +71,9 @@ const About = () => {
                   className="touch"
                   rel="noreferrer"
                 >
-                  RESUME
-                </a>
-                .
+                  resume
+                </a>{" "}
+                for more details on my experience.
               </p>
             </div>
           </div>
