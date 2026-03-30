@@ -8,7 +8,6 @@ import twitter from "../../Assets/Images/contact_icons/twitter.png";
 import linkedin from "../../Assets/Images/contact_icons/linkedin.png";
 import github from "../../Assets/Images/contact_icons/github.png";
 import medium from "../../Assets/Images/contact_icons/medium.png";
-import angelist from "../../Assets/Images/contact_icons/angelist.png";
 
 // Define type for social link
 interface SocialLink {
@@ -64,12 +63,12 @@ const LandingPage = () => {
       alt: "github",
       label: "GitHub",
     },
-    {
-      href: "https://angel.co/u/tracey-kadenyi",
-      img: angelist,
-      alt: "angelist",
-      label: "AngelList",
-    },
+    // {
+    //   href: "https://angel.co/u/tracey-kadenyi",
+    //   img: angelist,
+    //   alt: "angelist",
+    //   label: "AngelList",
+    // },
     {
       href: "https://twitter.com/traci_k7",
       img: twitter,
