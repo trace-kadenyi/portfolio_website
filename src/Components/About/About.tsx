@@ -4,7 +4,7 @@ import "./about.css";
 import myPic from "../../Assets/Images/profile_image.png";
 import skills from "../../Assets/Images/skills1.gif";
 
-type ActiveTab = 1 | 2 | 3;
+type ActiveTab = 1 | 2;
 
 const About = () => {
   const [active, setActive] = useState<ActiveTab>(1);
@@ -27,10 +27,10 @@ const About = () => {
               className={active === 2 ? "tabs active_tabs" : "tabs"}
               onClick={() => handleTabs(2)}
             ></button>
-            <button
+            {/* <button
               className={active === 3 ? "tabs active_tabs" : "tabs"}
               onClick={() => handleTabs(3)}
-            ></button>
+            ></button> */}
           </div>
           {/* about me intro */}
           <div className={active === 1 ? "active_content" : "content"}>
@@ -90,22 +90,22 @@ const About = () => {
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
-                <li>Python</li>
-                <li>Ruby</li>
+                <li>TypeScript</li>
               </ul>
 
               <hr className="line" />
               {/* frameworks/libraries */}
               <h3>Frameworks/Libraries</h3>
               <ul className="frameworks">
-                <li>React</li>
+                <li>Reactjs</li>
+                <li>Expressjs</li>
+                <li>Nodejs</li>
+                <li>Nextjs</li>
                 <li>Redux</li>
-                <li>Express</li>
-                <li>Node.js</li>
-                <li>Ruby on Rails</li>
+                <li>CSS</li>
+                <li>Tailwind</li>
                 <li>Bootstrap</li>
                 <li>Material UI</li>
-                <li>Font Awesome</li>
               </ul>
 
               <hr className="line" />
@@ -139,7 +139,9 @@ const About = () => {
                 <li>RESTful API</li>
                 <li>Object Oriented Programming</li>
                 <li>Jest</li>
-                <li>RSpec</li>
+                <li>RBAC</li>
+                <li>System Architecture</li>
+                <li>Saas Development</li>
               </ul>
               <hr className="line" />
               {/* soft skills */}
@@ -159,7 +161,7 @@ const About = () => {
             </div>
           </div>
           {/* background section */}
-          <div className={active === 3 ? "active_content" : "content"}>
+          {/* <div className={active === 3 ? "active_content" : "content"}>
             <h1 className="about_title">Background</h1>
             <div className=" background_content">
               <p className="content_para background_para">
@@ -223,7 +225,7 @@ const About = () => {
                 application at a time.
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
