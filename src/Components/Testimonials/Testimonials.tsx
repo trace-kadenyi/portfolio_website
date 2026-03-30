@@ -11,10 +11,28 @@ import eyasu from "../../Assets/Images/testimonials/eyasu.png";
 import tarek from "../../Assets/Images/testimonials/tarek.png";
 // import priscilla from "../../Assets/Images/testimonials/priscilla.png";
 
-const Testimonials = () => {
-  const [active, setActive] = useState(1);
+type ActiveTab = 1 | 2 | 3 | 4 | 5;
 
-  const handleTabs = (index) => {
+interface Testimonial {
+  id: number;
+  name: string;
+  origin: string;
+  image: string;
+  content: string[];
+}
+
+interface TestimonialDisplay {
+  id: number;
+  name: string;
+  origin: string;
+  image: string;
+  paragraphs: string[];
+}
+
+const Testimonials = () => {
+  const [active, setActive] = useState<ActiveTab>(1);
+
+  const handleTabs = (index: ActiveTab): void => {
     setActive(index);
   };
 
@@ -23,9 +41,9 @@ const Testimonials = () => {
       <div className="testimonials_start">
         <h1 className="testimonials_head">Testimonials</h1>
         <p className="testimonials_intro">
-          I have worked on multiple projects with several
-          programmers from different countries through pair-programming. Here
-          are some of their recommendations...
+          I have worked on multiple projects with several programmers from
+          different countries. Here are some of their
+          recommendations...
         </p>
 
         {/* links */}
@@ -50,18 +68,6 @@ const Testimonials = () => {
             className={active === 5 ? "tabs active_tabs" : "tabs"}
             onClick={() => handleTabs(5)}
           ></button>
-          {/* <button
-            className={active === 6 ? "tabs active_tabs" : "tabs"}
-            onClick={() => handleTabs(6)}
-          ></button>
-          <button
-            className={active === 7 ? "tabs active_tabs" : "tabs"}
-            onClick={() => handleTabs(7)}
-          ></button>
-          <button
-            className={active === 8 ? "tabs active_tabs" : "tabs"}
-            onClick={() => handleTabs(8)}
-          ></button> */}
         </div>
 
         <div className="testimonials_container">

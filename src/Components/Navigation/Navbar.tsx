@@ -1,21 +1,23 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 
 import "./navbar.css";
 
 const Navbar = () => {
-  // toggle the toggle div to open and close the navbar
-  const handleToggle = () => {
-    const toggle = document.getElementById("toggle");
-    const toggler = document.getElementById("new_navbar");
-    toggle.classList.toggle("active");
-    toggler.classList.toggle("active");
+  // use refs for DOM elements instead of getelementbyid
+  const toggleRef = useRef<HTMLDivElement>(null);
+  const navbarRef = useRef<HTMLDivElement>(null);
+
+  // use optional chaining and nullish coalescing
+  const handleToggle = (): void => {
+    toggleRef.current?.classList.toggle("active");
+    navbarRef.current?.classList.toggle("active");
   };
 
   return (
     <div className="new_header_sect">
       <header className="new_header">
-        <div id="toggle" onClick={handleToggle}></div>
-        <div id="new_navbar" onClick={handleToggle}>
+        <div ref={toggleRef} id="toggle" onClick={handleToggle}></div>
+        <div ref={navbarRef} id="new_navbar" onClick={handleToggle}>
           <ul className="new_header_ul">
             <li>
               <a href="#home">Home</a>
