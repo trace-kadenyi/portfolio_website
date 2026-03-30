@@ -128,13 +128,6 @@ const Projects = () => {
           })}
         </div>
       </div>
-      {/* see more */}
-      {/* <div className="see_more">
-        <TiArrowForwardOutline className="more_btn" />
-        <button className="more_span" onClick={toggleHiddenProjects}>
-          See More
-        </button>
-      </div> */}
     </section>
   );
 };
