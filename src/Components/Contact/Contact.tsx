@@ -7,7 +7,7 @@ import twitter from "../../Assets/Images/contact_icons/twitter.png";
 import linkedin from "../../Assets/Images/contact_icons/linkedin.png";
 import github from "../../Assets/Images/contact_icons/github.png";
 import medium from "../../Assets/Images/contact_icons/medium.png";
-import mail from "../../Assets/Images/contact_icons/mail-icon.png";
+import mail from "../../Assets/Images/contact_icons/mail-icon.jpg";
 
 // Define interface for form data
 interface FormData {
