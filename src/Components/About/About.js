@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 import "./about.css";
-// import myPic from "../../Assets/Images/my_pic.png";
 import myPic from "../../Assets/Images/profile_image.png";
 import skills from "../../Assets/Images/skills1.gif";
 
