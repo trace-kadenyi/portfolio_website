@@ -97,7 +97,7 @@ const Projects = () => {
                       <h3 className="project_title">{project.title}</h3>
                       <p className="project_desc">{project.description}</p>
                       <div className="tech_span">
-                        {project.technologies.map((tech) => {
+                        {project.technologies.map((tech: string) => {
                           return <span key={tech}>{tech}</span>;
                         })}
                       </div>
