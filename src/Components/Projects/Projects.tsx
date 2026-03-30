@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 
 import "./projects.css";
-import casual_gourmet from "../../Assets/Images/casual_gourmet.png";
+import planit from "../../Assets/Images/dashboard-dark.png";
 import imagine from "../../Assets/Images/imagine.png";
 import metriq from "../../Assets/Images/metriq_app.png";
 
@@ -20,16 +20,26 @@ const Projects = () => {
   const projectsContainer: Project[] = [
     {
       id: 1,
+      title: "Planit",
+      description:
+        "An event management SaaS that allows organizations to effecively manage various elements of their events such as tasks, vendors, expenses, clients, etc.",
+      technologies: ["MERN Stack", "Redux", "Tailwind", "Supabase"],
+      image: planit,
+      live_link: "https://planit-hq.vercel.app/",
+      source_link: "https://github.com/trace-kadenyi/PlaniT",
+    },
+    {
+      id: 2,
       title: "MetriQ",
       description:
         "An interactive web performance analysis platform for visualizing PageSpeed results, comparing competitors, and generating AI-powered insights.",
       technologies: ["MERN Stack", "Tailwind", "AI", "Recharts"],
       image: metriq,
       live_link: "https://metri-q.vercel.app/",
-      source_link: "https://github.com/trace-kadenyi/MetriQ.git",
+      source_link: "https://github.com/trace-kadenyi/MetriQ",
     },
     {
-      id: 2,
+      id: 3,
       title: "Imagine",
       description:
         "An interactive application for creatives (readers and writers). Users can publish their own original stories and/or read stories published by other users.",
@@ -37,16 +47,6 @@ const Projects = () => {
       image: imagine,
       live_link: "https://imagine-tellmeastory.vercel.app/",
       source_link: "https://github.com/trace-kadenyi/storybrooke-frontend",
-    },
-    {
-      id: 3,
-      title: "Casual Gourmet",
-      description:
-        "An application that provides users with multiple recipes for both foods and drinks. The user can search for recipes by name, main ingredient, location, etc.",
-      technologies: ["React", "Redux", "API"],
-      image: casual_gourmet,
-      live_link: "https://casual-gourmet.vercel.app/",
-      source_link: "https://github.com/trace-kadenyi/casual_gourmet.git",
     },
   ];
 

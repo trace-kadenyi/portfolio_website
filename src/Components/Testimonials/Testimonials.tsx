@@ -42,7 +42,7 @@ const Testimonials = () => {
         <h1 className="testimonials_head">Testimonials</h1>
         <p className="testimonials_intro">
           I have worked on multiple projects with several programmers from
-          different countries through pair-programming. Here are some of their
+          different countries. Here are some of their
           recommendations...
         </p>
 
