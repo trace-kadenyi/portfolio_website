@@ -13,22 +13,6 @@ import tarek from "../../Assets/Images/testimonials/tarek.png";
 
 type ActiveTab = 1 | 2 | 3 | 4 | 5;
 
-interface Testimonial {
-  id: number;
-  name: string;
-  origin: string;
-  image: string;
-  content: string[];
-}
-
-interface TestimonialDisplay {
-  id: number;
-  name: string;
-  origin: string;
-  image: string;
-  paragraphs: string[];
-}
-
 const Testimonials = () => {
   const [active, setActive] = useState<ActiveTab>(1);
 
@@ -42,8 +26,7 @@ const Testimonials = () => {
         <h1 className="testimonials_head">Testimonials</h1>
         <p className="testimonials_intro">
           I have worked on multiple projects with several programmers from
-          different countries. Here are some of their
-          recommendations...
+          different countries. Here are some of their recommendations...
         </p>
 
         {/* links */}
