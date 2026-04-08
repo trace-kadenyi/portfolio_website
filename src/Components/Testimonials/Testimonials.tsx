@@ -4,12 +4,9 @@ import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 import "./testimonials.css";
 import charles from "../../Assets/Images/testimonials/charles.png";
 import mohamed from "../../Assets/Images/testimonials/aachour.png";
-// import tushar from "../../Assets/Images/testimonials/tushar.png";
 import clifford from "../../Assets/Images/testimonials/clifford.png";
-// import alex from "../../Assets/Images/testimonials/alex.png";
 import eyasu from "../../Assets/Images/testimonials/eyasu.png";
 import tarek from "../../Assets/Images/testimonials/tarek.png";
-// import priscilla from "../../Assets/Images/testimonials/priscilla.png";
 
 type ActiveTab = 1 | 2 | 3 | 4 | 5;
 
@@ -91,9 +88,7 @@ const Testimonials = () => {
               </div>
             </div>
           </div>
-          {/* end */}
-
-          {/* second testimonial */}
+         
           <div
             className={active === 2 ? "active_content_testimonials" : "content"}
           >
@@ -124,41 +119,7 @@ const Testimonials = () => {
               </div>
             </div>
           </div>
-          {/* end */}
-
-          {/* third testimonial */}
-          {/* <div
-            className={active === 3 ? "active_content_testimonials" : "content"}
-          >
-            <div className="testimonials_card">
-              <div className="testimonials_content">
-                <div className="testimonials_text">
-                  <p className="testimonials_span1">
-                    <span className="quote">
-                      <FaQuoteLeft />
-                    </span>
-                    Tracey is very skilled in front-end technologies like React,
-                    Redux, and she is a team player and has an eye for details.
-                    She is a quick learner and manages to understand and adapt
-                    to new technologies. I enjoyed working with Tracey a lot.{" "}
-                    <span className="quote">
-                      <FaQuoteRight />
-                    </span>
-                  </p>
-                </div>
-              </div>
-              <div className="testimonials_img">
-                <img src={tushar} alt="testimonials" />
-                <div className="identity">
-                  <p className="testimonials_name">Tushar Singh</p>
-                  <p className="origin">Delhi, India</p>
-                </div>
-              </div>
-            </div>
-          </div> */}
-          {/* end */}
-
-          {/* fourth testimonial */}
+          
           <div
             className={active === 3 ? "active_content_testimonials" : "content"}
           >
@@ -196,41 +157,7 @@ const Testimonials = () => {
               </div>
             </div>
           </div>
-          {/* end */}
-
-          {/* fifth testimonial */}
-          {/* <div
-            className={active === 5 ? "active_content_testimonials" : "content"}
-          >
-            <div className="testimonials_card">
-              <div className="testimonials_content">
-                <div className="testimonials_text">
-                  <p className="testimonials_span1">
-                    <span className="quote">
-                      <FaQuoteLeft />
-                    </span>
-                    Tracey is a very talented developer. Her understanding of
-                    algorithms is at an enviable level. She is always ready to
-                    tackle a problem and help others. She is also positive and
-                    communicative. I recommend her.
-                    <span className="quote">
-                      <FaQuoteRight />
-                    </span>
-                  </p>
-                </div>
-              </div>
-              <div className="testimonials_img">
-                <img src={alex} alt="testimonials" />
-                <div className="identity">
-                  <p className="testimonials_name">Aleksandra Ujvari</p>
-                  <p className="origin">Vojvodina, Serbia</p>
-                </div>
-              </div>
-            </div>
-          </div> */}
-          {/* end */}
-
-          {/* sixth testimonial */}
+         
           <div
             className={active === 4 ? "active_content_testimonials" : "content"}
           >
@@ -263,49 +190,7 @@ const Testimonials = () => {
               </div>
             </div>
           </div>
-          {/* end */}
-
-          {/* eighth testimonial */}
-          {/* <div
-            className={active === 7 ? "active_content_testimonials" : "content"}
-          >
-            <div className="testimonials_card">
-              <div className="testimonials_content">
-                <div className="testimonials_text">
-                  <p className="testimonials_span1">
-                    <span className="quote">
-                      <FaQuoteLeft />
-                    </span>
-                    I am writing this to recommend Tracey Kadenyi for the post
-                    of Full-Stack Web Developer. I had collaborated with Tracey
-                    and have noticed her work and assure you that Tracey is an
-                    excellent JavaScript and Ruby programmer.
-                  </p>{" "}
-                  <br />
-                  <p>
-                    She is an excellent team member and works in coordination
-                    with rest of the team. She encourages other team members to
-                    achieve their targets. Tracey has excellent communication
-                    skills and has the expertise to deliver project(s) assigned
-                    to her on time.
-                    <span className="quote">
-                      <FaQuoteRight />
-                    </span>
-                  </p>
-                </div>
-              </div>
-              <div className="testimonials_img">
-                <img src={priscilla} alt="testimonials" />
-                <div className="identity">
-                  <p className="testimonials_name">Priscilla Oyebade</p>
-                  <p className="origin">Lagos State, Nigeria</p>
-                </div>
-              </div>
-            </div>
-          </div> */}
-          {/* end */}
-          {/* seventh testimonial */}
-          <div
+                   <div
             className={active === 5 ? "active_content_testimonials" : "content"}
           >
             <div className="testimonials_card">
@@ -334,7 +219,7 @@ const Testimonials = () => {
               </div>
             </div>
           </div>
-          {/* end */}
+        
         </div>
       </div>
     </section>
